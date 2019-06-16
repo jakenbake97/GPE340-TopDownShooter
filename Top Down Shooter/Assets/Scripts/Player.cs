@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     {
         Vector3 input = new Vector3(Input.GetAxis("Horizontal"),0f,Input.GetAxis("Vertical"));
         input = Vector3.ClampMagnitude(input, 1f);
+        input = transform.InverseTransformDirection(input);
         input *= speed;
         anim.SetFloat("Horizontal", input.x);
         anim.SetFloat("Vertical", input.z);
