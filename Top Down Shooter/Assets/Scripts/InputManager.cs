@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
+    [SerializeField, Tooltip("A light to be placed on the cursor to make it easier to see")]
+    private LightFollowsMouse mousePointLight;
+
     private CharacterAnimationController characterAnimations;
     private bool _isMainNotNull;
     private Plane plane;
@@ -33,7 +36,9 @@ public class InputManager : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (plane.Raycast(ray, out var distance))
         {
-            characterAnimations.RotateTowardsPoint(ray.GetPoint(distance));
+            var point = ray.GetPoint(distance);
+            characterAnimations.RotateTowardsPoint(point);
+            mousePointLight.LightMovesToPoint(point);
         }
     }
 
