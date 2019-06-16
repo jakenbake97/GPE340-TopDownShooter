@@ -1,5 +1,6 @@
 ﻿Shader "Custom/Silhouette" {
-    Properties {
+    Properties //shader properties to be edited in the inspector
+    { 
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _ShadeColor ("Silhouette Color", Color) = (0.47, 0.48, 0.46, 1)
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
@@ -52,7 +53,7 @@
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_Target
+            fixed4 frag (v2f i) : SV_Target //color the character gray if they are obstructed
             {
                 float4 color = _ShadeColor;
                 return color;
@@ -77,13 +78,15 @@
         half _Metallic;
         fixed4 _Color;
 
-        void surf (Input IN, inout SurfaceOutputStandard o) {
+        void surf (Input IN, inout SurfaceOutputStandard o) //standard surface shader with color, metallic, smoothness, and alpha properties
+        { 
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
             o.Albedo = c.rgb;
             o.Metallic = _Metallic;
             o.Smoothness = _Glossiness;
             o.Alpha = c.a;
         }
+        
         ENDCG
     }
     FallBack "Diffuse"

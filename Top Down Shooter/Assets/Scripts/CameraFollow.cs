@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -17,8 +15,15 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        AdjustCameraPosition();
+    }
+
+    private void AdjustCameraPosition() //takes a target position and moves towards it based off of a step amount
+                                        //(cameraMoveSpeed per second)
+    {
         var position = targetPosition.position;
         transform.position = Vector3.MoveTowards(transform.position,
-            new Vector3(position.x, position.y + cameraHeight, position.z), cameraMoveSpeed * Time.deltaTime);
+            new Vector3(position.x, position.y + cameraHeight, position.z),
+            cameraMoveSpeed * Time.deltaTime);
     }
 }
