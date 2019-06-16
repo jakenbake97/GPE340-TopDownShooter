@@ -2,8 +2,11 @@
 
 public class CharacterAnimationController : MonoBehaviour
 {
-    [SerializeField, Tooltip("The max speed of the player")]
-    private float speed = 4f;
+    [SerializeField, Tooltip("The max speed of the player (in meters per second")]
+    private float moveSpeed = 4f;
+
+    [SerializeField, Tooltip("The rotations speed of the player (in degrees per second)")]
+    private float rotationSpeed = 90f;
 
     private Animator anim;
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
@@ -15,11 +18,10 @@ public class CharacterAnimationController : MonoBehaviour
     }
 
 
-
     public void SetSpeed(Vector3 inputVector)
     {
         inputVector = transform.InverseTransformDirection(inputVector);
-        inputVector *= speed;
+        inputVector *= moveSpeed;
         SetAnimationProperties(inputVector);
     }
 
@@ -27,5 +29,12 @@ public class CharacterAnimationController : MonoBehaviour
     {
         anim.SetFloat(Horizontal, inputVector.x);
         anim.SetFloat(Vertical, inputVector.z);
+    }
+
+    public void RotateTowardsPoint(Vector3 targetPoint)
+    {
+        Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
+        transform.rotation =
+            Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }

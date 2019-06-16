@@ -5,8 +5,16 @@ using UnityEngine;
 public class InputManager : MonoBehaviour
 {
     private CharacterAnimationController characterAnimations;
+    private bool _isMainNotNull;
+    private Plane plane;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        _isMainNotNull = Camera.main != null;
+        plane = new Plane(Vector3.up, transform.position);
+    }
+
     private void Start()
     {
         characterAnimations = GetComponent<CharacterAnimationController>();
@@ -16,6 +24,17 @@ public class InputManager : MonoBehaviour
     private void Update()
     {
         AxisInput();
+        MouseInputPlaneCast();
+    }
+
+    private void MouseInputPlaneCast()
+    {
+        if (!_isMainNotNull) return;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (plane.Raycast(ray, out var distance))
+        {
+            characterAnimations.RotateTowardsPoint(ray.GetPoint(distance));
+        }
     }
 
     private void AxisInput()
