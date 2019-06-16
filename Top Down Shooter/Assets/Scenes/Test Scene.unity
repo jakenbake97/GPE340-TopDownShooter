@@ -7853,6 +7853,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2069138105}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &969471130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969471129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb28a35c8875114da32496fd1000569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &969471131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4b735d4fc5d012c44bc214287b5eb249,
@@ -12062,21 +12074,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: vanguard_t_choonyung
       objectReference: {fileID: 0}
-    - target: {fileID: -8041784574630284323, guid: 4b735d4fc5d012c44bc214287b5eb249,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.00019284309
-      objectReference: {fileID: 0}
-    - target: {fileID: -8041784574630284323, guid: 4b735d4fc5d012c44bc214287b5eb249,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00016750651
-      objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 4b735d4fc5d012c44bc214287b5eb249,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 7d7e42d50310fa94b8c71e5e726e7aa2, type: 2}
     - target: {fileID: -4216859302048453862, guid: 4b735d4fc5d012c44bc214287b5eb249,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12132,6 +12129,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8041784574630284323, guid: 4b735d4fc5d012c44bc214287b5eb249,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00019284309
+      objectReference: {fileID: 0}
+    - target: {fileID: -8041784574630284323, guid: 4b735d4fc5d012c44bc214287b5eb249,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00016750651
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 4b735d4fc5d012c44bc214287b5eb249,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7d7e42d50310fa94b8c71e5e726e7aa2, type: 2}
     - target: {fileID: 3373197664844238778, guid: 4b735d4fc5d012c44bc214287b5eb249,
         type: 3}
       propertyPath: m_LocalRotation.x
