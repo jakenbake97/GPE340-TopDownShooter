@@ -42,9 +42,11 @@ public class CharacterAnimationController : MonoBehaviour
     /// the target by rotationSpeed degrees per second </summary>
     public void RotateTowardsPoint(Vector3 targetPoint)
     {
-        targetPoint = new Vector3(targetPoint.x, transform.position.y, targetPoint.z);
-        Quaternion targetRotation = Quaternion.LookRotation(targetPoint - transform.position);
-        transform.rotation =
-            Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        var objectTransform = transform;
+        var position = objectTransform.position;
+        targetPoint = new Vector3(targetPoint.x, position.y, targetPoint.z);
+        Quaternion targetRotation = Quaternion.LookRotation(targetPoint - position);
+        objectTransform.rotation =
+            Quaternion.RotateTowards(objectTransform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }

@@ -17,17 +17,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="1020">
+              <caret line="51" column="1" lean-forward="true" selection-end-line="51" selection-end-column="1" />
               <folding>
-                <marker date="1560909828878" expanded="true" signature="77:2154" ph="{...}" />
-                <marker date="1560909828878" expanded="true" signature="685:738" ph="{...}" />
-                <marker date="1560909828878" expanded="true" signature="745:947" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
-                <marker date="1560909828878" expanded="true" signature="993:1156" ph="{...}" />
-                <marker date="1560909828878" expanded="true" signature="1162:1307" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
-                <marker date="1560909828878" expanded="true" signature="1368:1478" ph="{...}" />
-                <marker date="1560909828878" expanded="true" signature="1484:1767" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
-                <marker date="1560909828878" expanded="true" signature="1823:2152" ph="{...}" />
+                <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
+                <marker date="1560910581665" expanded="true" signature="685:738" ph="{...}" />
+                <marker date="1560910581665" expanded="true" signature="745:947" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
+                <marker date="1560910581665" expanded="true" signature="993:1156" ph="{...}" />
+                <marker date="1560910581665" expanded="true" signature="1162:1307" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
+                <marker date="1560910581665" expanded="true" signature="1368:1478" ph="{...}" />
+                <marker date="1560910581665" expanded="true" signature="1484:1767" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
+                <marker date="1560910581665" expanded="true" signature="1823:2234" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -207,12 +207,12 @@
       <workItem from="1560645890037" duration="758000" />
       <workItem from="1560703124373" duration="9268000" />
       <workItem from="1560734470056" duration="1748000" />
-      <workItem from="1560909196193" duration="633000" />
+      <workItem from="1560909196193" duration="1645000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13296000" />
+    <option name="totallyTimeSpent" value="14308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -225,7 +225,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25784665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -337,17 +336,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="1020">
+          <caret line="51" column="1" lean-forward="true" selection-end-line="51" selection-end-column="1" />
           <folding>
-            <marker date="1560909828878" expanded="true" signature="77:2154" ph="{...}" />
-            <marker date="1560909828878" expanded="true" signature="685:738" ph="{...}" />
-            <marker date="1560909828878" expanded="true" signature="745:947" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
-            <marker date="1560909828878" expanded="true" signature="993:1156" ph="{...}" />
-            <marker date="1560909828878" expanded="true" signature="1162:1307" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
-            <marker date="1560909828878" expanded="true" signature="1368:1478" ph="{...}" />
-            <marker date="1560909828878" expanded="true" signature="1484:1767" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
-            <marker date="1560909828878" expanded="true" signature="1823:2152" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="685:738" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="745:947" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
+            <marker date="1560910581665" expanded="true" signature="993:1156" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="1162:1307" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
+            <marker date="1560910581665" expanded="true" signature="1368:1478" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="1484:1767" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
+            <marker date="1560910581665" expanded="true" signature="1823:2234" ph="{...}" />
           </folding>
         </state>
       </provider>
