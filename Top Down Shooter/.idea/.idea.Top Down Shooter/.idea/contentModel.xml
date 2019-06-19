@@ -11,6 +11,7 @@
           <e p="CharacterAnimationController.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="LightFollowsMouse.cs" t="Include" />
+          <e p="SilhouetteShader.shader" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
