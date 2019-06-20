@@ -4,7 +4,7 @@
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
-              <caret line="51" column="1" lean-forward="true" selection-end-line="51" selection-end-column="1" />
+              <caret line="51" column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
                 <marker date="1560910581665" expanded="true" signature="685:738" ph="{...}" />
@@ -50,6 +50,24 @@
                 <marker date="1560712941841" expanded="true" signature="1796:2211" ph="/* takes the mouse position and casts a ray from the screen point to the plane ... */" />
                 <marker date="1560712941841" expanded="true" signature="2211:2573" ph="{...}" />
                 <marker date="1560712941841" expanded="true" signature="2373:2567" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+              <folding>
+                <marker date="1561073083862" expanded="true" signature="6:92" ph="..." />
+                <marker date="1561073083862" expanded="true" signature="129:729" ph="{...}" />
+                <marker date="1561073083862" expanded="true" signature="243:280" ph="{...}" />
+                <marker date="1561073083862" expanded="true" signature="346:394" ph="{...}" />
+                <marker date="1561073083862" expanded="true" signature="434:485" ph="{...}" />
+                <marker date="1561073083862" expanded="true" signature="538:621" ph="{...}" />
+                <marker date="1561073083862" expanded="true" signature="670:727" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -114,6 +132,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
@@ -129,6 +148,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
       </list>
     </option>
   </component>
@@ -147,6 +168,20 @@
       <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
@@ -208,11 +243,12 @@
       <workItem from="1560703124373" duration="9268000" />
       <workItem from="1560734470056" duration="1748000" />
       <workItem from="1560909196193" duration="1645000" />
+      <workItem from="1561066971218" duration="1305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14308000" />
+    <option name="totallyTimeSpent" value="16666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -226,7 +262,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25784665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25983313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -293,6 +329,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
+          <folding>
+            <marker date="1560713369662" expanded="true" signature="27:2251" ph="{...}" />
+            <marker date="1560713369662" expanded="true" signature="98:332" ph="{...}" />
+            <marker date="1560713369662" expanded="true" signature="347:2226" ph="{...}" />
+            <marker date="1560713369662" expanded="true" signature="430:474" ph="{...}" />
+            <marker date="1560713369662" expanded="true" signature="540:1532" ph="{...}" />
+            <marker date="1560713369662" expanded="true" signature="563:1517" ph="{...}" />
+            <marker date="1560713369662" expanded="true" signature="1591:2215" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -318,26 +370,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="92" column="1" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
-          <folding>
-            <marker date="1560713369662" expanded="true" signature="27:2251" ph="{...}" />
-            <marker date="1560713369662" expanded="true" signature="98:332" ph="{...}" />
-            <marker date="1560713369662" expanded="true" signature="347:2226" ph="{...}" />
-            <marker date="1560713369662" expanded="true" signature="430:474" ph="{...}" />
-            <marker date="1560713369662" expanded="true" signature="540:1532" ph="{...}" />
-            <marker date="1560713369662" expanded="true" signature="563:1517" ph="{...}" />
-            <marker date="1560713369662" expanded="true" signature="1591:2215" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="51" column="1" lean-forward="true" selection-end-line="51" selection-end-column="1" />
+          <caret line="51" column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
             <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
             <marker date="1560910581665" expanded="true" signature="685:738" ph="{...}" />
