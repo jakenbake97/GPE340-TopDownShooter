@@ -6,12 +6,7 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    //variable max and initial health
-    //ability to keep track of health and have other scripts view that value
-    //ability to take damage from things
-    //ability to heal
-    //notify other objects of state changes when taking damage or when destroyed
-    // Start is called before the first frame update
+    
     [Header("Health Stats"), SerializeField, Tooltip("The maximum health allowed")]
     private float maxHealth = 200f;
 
