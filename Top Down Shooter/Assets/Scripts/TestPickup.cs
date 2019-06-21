@@ -1,13 +1,10 @@
 using UnityEngine;
 
-namespace DefaultNamespace
+public class TestPickup : Pickup
 {
-    public class TestPickup : Pickup
+    protected override void OnPickUp(Player player)
     {
-        protected override void OnPickUp(Player player)
-        {
-            Debug.LogFormat("I've been picked up by {0}!", player.gameObject.name);
-            base.OnPickUp(player);
-        }
+        Debug.LogFormat("I've been picked up by {0}!", player.gameObject.name);
+        base.OnPickUp(player);
     }
 }
