@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
+            <state relative-caret-position="920">
               <caret line="51" column="1" selection-end-line="51" selection-end-column="1" />
               <folding>
                 <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
@@ -55,19 +54,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="31" column="47" lean-forward="true" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+            <state relative-caret-position="749">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
-                <marker date="1561073083862" expanded="true" signature="6:92" ph="..." />
-                <marker date="1561073083862" expanded="true" signature="129:729" ph="{...}" />
-                <marker date="1561073083862" expanded="true" signature="243:280" ph="{...}" />
-                <marker date="1561073083862" expanded="true" signature="346:394" ph="{...}" />
-                <marker date="1561073083862" expanded="true" signature="434:485" ph="{...}" />
-                <marker date="1561073083862" expanded="true" signature="538:621" ph="{...}" />
-                <marker date="1561073083862" expanded="true" signature="670:727" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="6:92" ph="..." />
+                <marker date="1561128686764" expanded="true" signature="138:1199" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="259:296" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="362:401" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="438:486" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="539:622" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="671:1098" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="686:824" ph="/* TODO: make player hold a reference to the player GameObject instead of a script on the player and search for ... */" />
+                <marker date="1561128686764" expanded="true" signature="947:1020" ph="/* became CharacterAnimationController and could be ... */" />
+                <marker date="1561128686764" expanded="true" signature="1042:1092" ph="{...}" />
+                <marker date="1561128686764" expanded="true" signature="1156:1197" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestPickup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+              <folding>
+                <marker date="1561128686765" expanded="true" signature="46:300" ph="{...}" />
+                <marker date="1561128686765" expanded="true" signature="85:298" ph="{...}" />
+                <marker date="1561128686765" expanded="true" signature="153:292" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="809">
+              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+              <folding>
+                <marker date="1561130818588" expanded="true" signature="6:118" ph="..." />
+                <marker date="1561130818588" expanded="true" signature="155:1673" ph="{...}" />
+                <marker date="1561130818588" expanded="true" signature="162:469" ph="/* variable max and initial health ... */" />
+                <marker date="1561130818588" expanded="true" signature="1193:1439" ph="{...}" />
+                <marker date="1561130818588" expanded="true" signature="1249:1295" ph="{...}" />
+                <marker date="1561130818588" expanded="true" signature="1385:1433" ph="{...}" />
+                <marker date="1561130818588" expanded="true" signature="1473:1671" ph="{...}" />
+                <marker date="1561130818588" expanded="true" signature="1525:1569" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -133,9 +169,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -148,8 +186,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
       </list>
     </option>
   </component>
@@ -165,8 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -185,9 +222,11 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,11 +283,12 @@
       <workItem from="1560734470056" duration="1748000" />
       <workItem from="1560909196193" duration="1645000" />
       <workItem from="1561066971218" duration="1305000" />
+      <workItem from="1561127019024" duration="3628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16666000" />
+    <option name="totallyTimeSpent" value="20294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,8 +301,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25983313" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26181963" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -309,6 +350,23 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="51" column="1" selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="685:738" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="745:947" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
+            <marker date="1560910581665" expanded="true" signature="993:1156" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="1162:1307" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
+            <marker date="1560910581665" expanded="true" signature="1368:1478" ph="{...}" />
+            <marker date="1560910581665" expanded="true" signature="1484:1767" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
+            <marker date="1560910581665" expanded="true" signature="1823:2234" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="940">
@@ -370,20 +428,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="51" column="1" selection-end-line="51" selection-end-column="1" />
+        <state relative-caret-position="749">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <marker date="1560910581665" expanded="true" signature="77:2236" ph="{...}" />
-            <marker date="1560910581665" expanded="true" signature="685:738" ph="{...}" />
-            <marker date="1560910581665" expanded="true" signature="745:947" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
-            <marker date="1560910581665" expanded="true" signature="993:1156" ph="{...}" />
-            <marker date="1560910581665" expanded="true" signature="1162:1307" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
-            <marker date="1560910581665" expanded="true" signature="1368:1478" ph="{...}" />
-            <marker date="1560910581665" expanded="true" signature="1484:1767" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
-            <marker date="1560910581665" expanded="true" signature="1823:2234" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="6:92" ph="..." />
+            <marker date="1561128686764" expanded="true" signature="138:1199" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="259:296" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="362:401" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="438:486" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="539:622" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="671:1098" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="686:824" ph="/* TODO: make player hold a reference to the player GameObject instead of a script on the player and search for ... */" />
+            <marker date="1561128686764" expanded="true" signature="947:1020" ph="/* became CharacterAnimationController and could be ... */" />
+            <marker date="1561128686764" expanded="true" signature="1042:1092" ph="{...}" />
+            <marker date="1561128686764" expanded="true" signature="1156:1197" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestPickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <marker date="1561128686765" expanded="true" signature="46:300" ph="{...}" />
+            <marker date="1561128686765" expanded="true" signature="85:298" ph="{...}" />
+            <marker date="1561128686765" expanded="true" signature="153:292" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="809">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <marker date="1561130818588" expanded="true" signature="6:118" ph="..." />
+            <marker date="1561130818588" expanded="true" signature="155:1673" ph="{...}" />
+            <marker date="1561130818588" expanded="true" signature="162:469" ph="/* variable max and initial health ... */" />
+            <marker date="1561130818588" expanded="true" signature="1193:1439" ph="{...}" />
+            <marker date="1561130818588" expanded="true" signature="1249:1295" ph="{...}" />
+            <marker date="1561130818588" expanded="true" signature="1385:1433" ph="{...}" />
+            <marker date="1561130818588" expanded="true" signature="1473:1671" ph="{...}" />
+            <marker date="1561130818588" expanded="true" signature="1525:1569" ph="{...}" />
           </folding>
         </state>
       </provider>

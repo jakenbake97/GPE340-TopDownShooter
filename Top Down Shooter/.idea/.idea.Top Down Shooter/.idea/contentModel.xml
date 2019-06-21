@@ -9,10 +9,12 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterAnimationController.cs" t="Include" />
+          <e p="Health.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="LightFollowsMouse.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />
           <e p="SilhouetteShader.shader" t="Include" />
+          <e p="TestPickup.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
