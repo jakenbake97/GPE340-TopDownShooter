@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,42 +13,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
-                <marker date="1561132500215" expanded="true" signature="130:2289" ph="{...}" />
-                <marker date="1561132500215" expanded="true" signature="738:791" ph="{...}" />
-                <marker date="1561132500215" expanded="true" signature="798:1000" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
-                <marker date="1561132500215" expanded="true" signature="1046:1209" ph="{...}" />
-                <marker date="1561132500215" expanded="true" signature="1215:1360" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
-                <marker date="1561132500215" expanded="true" signature="1421:1531" ph="{...}" />
-                <marker date="1561132500215" expanded="true" signature="1537:1820" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
-                <marker date="1561132500215" expanded="true" signature="1876:2287" ph="{...}" />
+                <marker date="1561132621064" expanded="true" signature="130:2382" ph="{...}" />
+                <marker date="1561132621064" expanded="true" signature="790:884" ph="{...}" />
+                <marker date="1561132621064" expanded="true" signature="891:1093" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
+                <marker date="1561132621064" expanded="true" signature="1139:1302" ph="{...}" />
+                <marker date="1561132621064" expanded="true" signature="1308:1453" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
+                <marker date="1561132621064" expanded="true" signature="1514:1624" ph="{...}" />
+                <marker date="1561132621064" expanded="true" signature="1630:1913" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
+                <marker date="1561132621064" expanded="true" signature="1969:2380" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DamagePickup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="940">
-              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+            <state relative-caret-position="80">
+              <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="14" selection-end-column="5" />
               <folding>
-                <marker date="1560712941841" expanded="true" signature="61:2580" ph="{...}" />
-                <marker date="1560712941841" expanded="true" signature="419:1027" ph="{...}" />
-                <marker date="1560712941841" expanded="true" signature="590:726" ph="/* null reference exception, called in awake method to prevent ... */" />
-                <marker date="1560712941841" expanded="true" signature="892:1021" ph="/* increase performance as opposed to creating a new plane ... */" />
-                <marker date="1560712941841" expanded="true" signature="1053:1141" ph="{...}" />
-                <marker date="1560712941841" expanded="true" signature="1207:1271" ph="{...}" />
-                <marker date="1560712941841" expanded="true" signature="1306:1550" ph="/* gets horizontal and vertical axis input and clamps the magnitude to 1, then passes input ... */" />
-                <marker date="1560712941841" expanded="true" signature="1550:1755" ph="{...}" />
-                <marker date="1560712941841" expanded="true" signature="1796:2211" ph="/* takes the mouse position and casts a ray from the screen point to the plane ... */" />
-                <marker date="1560712941841" expanded="true" signature="2211:2573" ph="{...}" />
-                <marker date="1560712941841" expanded="true" signature="2373:2567" ph="{...}" />
+                <marker date="1561132832072" expanded="false" signature="6:78" ph="..." />
+                <marker date="1561132832072" expanded="true" signature="114:421" ph="{...}" />
+                <marker date="1561132832072" expanded="true" signature="270:419" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/HealPickup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <marker date="1561133012454" expanded="false" signature="6:78" ph="..." />
+                <marker date="1561133012454" expanded="true" signature="112:402" ph="{...}" />
+                <marker date="1561133012454" expanded="true" signature="255:400" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -113,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
                 <marker date="1561132376106" expanded="true" signature="6:54" ph="..." />
                 <marker date="1561132376106" expanded="true" signature="132:418" ph="{...}" />
@@ -184,9 +190,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamagePickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
@@ -206,6 +214,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DamagePickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealPickup.cs" />
       </list>
     </option>
   </component>
@@ -300,12 +310,12 @@
       <workItem from="1560734470056" duration="1748000" />
       <workItem from="1560909196193" duration="1645000" />
       <workItem from="1561066971218" duration="1305000" />
-      <workItem from="1561127019024" duration="5308000" />
+      <workItem from="1561127019024" duration="5819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21974000" />
+    <option name="totallyTimeSpent" value="22485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,7 +490,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding>
             <marker date="1561132376106" expanded="true" signature="6:54" ph="..." />
             <marker date="1561132376106" expanded="true" signature="132:418" ph="{...}" />
@@ -493,16 +503,40 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <marker date="1561132500215" expanded="true" signature="130:2289" ph="{...}" />
-            <marker date="1561132500215" expanded="true" signature="738:791" ph="{...}" />
-            <marker date="1561132500215" expanded="true" signature="798:1000" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
-            <marker date="1561132500215" expanded="true" signature="1046:1209" ph="{...}" />
-            <marker date="1561132500215" expanded="true" signature="1215:1360" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
-            <marker date="1561132500215" expanded="true" signature="1421:1531" ph="{...}" />
-            <marker date="1561132500215" expanded="true" signature="1537:1820" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
-            <marker date="1561132500215" expanded="true" signature="1876:2287" ph="{...}" />
+            <marker date="1561132621064" expanded="true" signature="130:2382" ph="{...}" />
+            <marker date="1561132621064" expanded="true" signature="790:884" ph="{...}" />
+            <marker date="1561132621064" expanded="true" signature="891:1093" ph="///takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
+            <marker date="1561132621064" expanded="true" signature="1139:1302" ph="{...}" />
+            <marker date="1561132621064" expanded="true" signature="1308:1453" ph="///sets the float parameters of the animator using the input vector and a hash ID representing the ... " />
+            <marker date="1561132621064" expanded="true" signature="1514:1624" ph="{...}" />
+            <marker date="1561132621064" expanded="true" signature="1630:1913" ph="///Takes a target point from the mouse position of the input manager and creates a quaternion for ... " />
+            <marker date="1561132621064" expanded="true" signature="1969:2380" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DamagePickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <marker date="1561132832072" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561132832072" expanded="true" signature="114:421" ph="{...}" />
+            <marker date="1561132832072" expanded="true" signature="270:419" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HealPickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1561133012454" expanded="false" signature="6:78" ph="..." />
+            <marker date="1561133012454" expanded="true" signature="112:402" ph="{...}" />
+            <marker date="1561133012454" expanded="true" signature="255:400" ph="{...}" />
           </folding>
         </state>
       </provider>

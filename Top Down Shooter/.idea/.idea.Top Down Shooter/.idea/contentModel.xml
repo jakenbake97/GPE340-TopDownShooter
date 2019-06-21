@@ -9,6 +9,8 @@
         <e p="Scripts" t="Include">
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterAnimationController.cs" t="Include" />
+          <e p="DamagePickup.cs" t="Include" />
+          <e p="HealPickup.cs" t="Include" />
           <e p="Health.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
           <e p="LightFollowsMouse.cs" t="Include" />
