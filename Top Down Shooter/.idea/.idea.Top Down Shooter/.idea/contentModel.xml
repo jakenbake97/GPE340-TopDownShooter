@@ -15,9 +15,12 @@
           <e p="InputManager.cs" t="Include" />
           <e p="LightFollowsMouse.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
           <e p="SilhouetteShader.shader" t="Include" />
           <e p="TestHealthText.cs" t="Include" />
           <e p="TestPickup.cs" t="Include" />
+          <e p="Weapon.cs" t="Include" />
+          <e p="WeaponPickup.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

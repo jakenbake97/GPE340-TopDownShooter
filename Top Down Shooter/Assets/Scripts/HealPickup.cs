@@ -7,10 +7,9 @@ public class HealPickup : Pickup
     [SerializeField, Tooltip("The amount to heal")]
     private float heal = 10f;
 
-    protected override void OnPickUp(InputManager player)
+    protected override void OnPickUp(Player player)
     {
-        var playerHealth = player.gameObject.GetComponent<Health>();
-        playerHealth.Heal(heal);
+        player.Health.Heal(heal);
         base.OnPickUp(player);
     }
 }

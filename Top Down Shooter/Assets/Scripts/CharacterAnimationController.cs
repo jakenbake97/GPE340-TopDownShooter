@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Health), typeof(Animator))]
+[RequireComponent(typeof(Animator))]
 public class CharacterAnimationController : MonoBehaviour
 {
     [Header("Movement Settings")] [SerializeField, Tooltip("The max speed of the player (in meters per second")]
@@ -10,17 +10,16 @@ public class CharacterAnimationController : MonoBehaviour
     private float rotationSpeed = 90f;
 
     private Animator anim;
-    
-    public Health Health { get; private set; }
+
 
     // int variables that hold a converted animator look up to increase performance, per the suggestion of Rider
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
+    private static readonly int WeaponAnimationType = Animator.StringToHash("Weapon Animation Type");
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        Health = GetComponent<Health>();
     }
 
 
@@ -52,5 +51,10 @@ public class CharacterAnimationController : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(targetPoint - position);
         objectTransform.rotation =
             Quaternion.RotateTowards(objectTransform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+
+    public void SetWeaponAnimationProperties(int property)
+    {
+        anim.SetInteger(WeaponAnimationType, property);
     }
 }

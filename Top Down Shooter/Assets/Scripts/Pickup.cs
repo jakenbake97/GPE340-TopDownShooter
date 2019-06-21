@@ -34,7 +34,7 @@ public abstract class Pickup : MonoBehaviour
         //TODO: make player hold a reference to the player GameObject instead of a script on the player and search for
         //PlayerData class.
 
-        InputManager player = other.GetComponent<InputManager>(); //Looking for inputManager, since Player class
+        Player player = other.GetComponent<Player>(); //Looking for inputManager, since Player class
         //became CharacterAnimationController and could be 
         //used by NPC
 
@@ -45,7 +45,7 @@ public abstract class Pickup : MonoBehaviour
         }
     }
 
-    protected virtual void OnPickUp(InputManager player)
+    protected virtual void OnPickUp(Player player)
     {
         Destroy(gameObject);
     }
