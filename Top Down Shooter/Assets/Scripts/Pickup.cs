@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pickup : MonoBehaviour
+public abstract class Pickup : MonoBehaviour
 {
-    private float lifeSpan = 60f;
+    private const float lifeSpan = 60f;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -16,12 +17,11 @@ public class Pickup : MonoBehaviour
     private void Update()
     {
         RotatePickup(30f);
-        
     }
 
-    private void Decay(float lifeSpan)
+    private void Decay(float timer)
     {
-        Destroy(gameObject, lifeSpan);
+        Destroy(gameObject, timer);
     }
 
     private void RotatePickup(float rotationAmount)
@@ -31,6 +31,22 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        throw new NotImplementedException();
+        //TODO: make player hold a reference to the player GameObject instead of a script on the player and search for
+        //PlayerData class.
+
+        InputManager player = other.GetComponent<InputManager>(); //Looking for inputManager, since Player class
+        //became CharacterAnimationController and could be 
+        //used by NPC
+
+
+        if (player)
+        {
+            OnPickUp(player);
+        }
+    }
+
+    protected virtual void OnPickUp(InputManager player)
+    {
+        Destroy(gameObject);
     }
 }
