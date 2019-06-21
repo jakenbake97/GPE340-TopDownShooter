@@ -31,6 +31,11 @@ public class Health : MonoBehaviour
     [SerializeField, Tooltip("Activated once when the object's healthValue reaches 0")]
     private UnityEvent onDie;
 
+    private void Awake()
+    {
+        HealthValue = initialHealth;
+    }
+
     public void Damage(float damage)
     {
         if (damage < 0) //damage must be positive

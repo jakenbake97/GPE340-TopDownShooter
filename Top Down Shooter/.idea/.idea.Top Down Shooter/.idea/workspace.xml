@@ -93,17 +93,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="549">
+              <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
               <folding>
-                <marker date="1561130818588" expanded="true" signature="6:118" ph="..." />
-                <marker date="1561130818588" expanded="true" signature="155:1673" ph="{...}" />
-                <marker date="1561130818588" expanded="true" signature="162:469" ph="/* variable max and initial health ... */" />
-                <marker date="1561130818588" expanded="true" signature="1193:1439" ph="{...}" />
-                <marker date="1561130818588" expanded="true" signature="1249:1295" ph="{...}" />
-                <marker date="1561130818588" expanded="true" signature="1385:1433" ph="{...}" />
-                <marker date="1561130818588" expanded="true" signature="1473:1671" ph="{...}" />
-                <marker date="1561130818588" expanded="true" signature="1525:1569" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="6:118" ph="..." />
+                <marker date="1561131104072" expanded="true" signature="155:1748" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="162:469" ph="/* variable max and initial health ... */" />
+                <marker date="1561131104072" expanded="true" signature="1181:1230" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="1268:1514" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="1324:1370" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="1460:1508" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="1548:1746" ph="{...}" />
+                <marker date="1561131104072" expanded="true" signature="1600:1644" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -283,12 +284,12 @@
       <workItem from="1560734470056" duration="1748000" />
       <workItem from="1560909196193" duration="1645000" />
       <workItem from="1561066971218" duration="1305000" />
-      <workItem from="1561127019024" duration="3628000" />
+      <workItem from="1561127019024" duration="3913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20294000" />
+    <option name="totallyTimeSpent" value="20579000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,17 +463,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="549">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
-            <marker date="1561130818588" expanded="true" signature="6:118" ph="..." />
-            <marker date="1561130818588" expanded="true" signature="155:1673" ph="{...}" />
-            <marker date="1561130818588" expanded="true" signature="162:469" ph="/* variable max and initial health ... */" />
-            <marker date="1561130818588" expanded="true" signature="1193:1439" ph="{...}" />
-            <marker date="1561130818588" expanded="true" signature="1249:1295" ph="{...}" />
-            <marker date="1561130818588" expanded="true" signature="1385:1433" ph="{...}" />
-            <marker date="1561130818588" expanded="true" signature="1473:1671" ph="{...}" />
-            <marker date="1561130818588" expanded="true" signature="1525:1569" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="6:118" ph="..." />
+            <marker date="1561131104072" expanded="true" signature="155:1748" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="162:469" ph="/* variable max and initial health ... */" />
+            <marker date="1561131104072" expanded="true" signature="1181:1230" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="1268:1514" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="1324:1370" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="1460:1508" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="1548:1746" ph="{...}" />
+            <marker date="1561131104072" expanded="true" signature="1600:1644" ph="{...}" />
           </folding>
         </state>
       </provider>
