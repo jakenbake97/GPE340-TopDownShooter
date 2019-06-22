@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [Header("Weapon Settings"), SerializeField]
-    private float fireRate;
+    [Header("Weapon Settings")]
+    public float fireRate;
+
+    [SerializeField] private float damage;
 
     public WeaponAnimationType animationType = WeaponAnimationType.hipFire;
 
