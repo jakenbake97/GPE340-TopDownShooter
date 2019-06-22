@@ -43,5 +43,12 @@ public class Player : MonoBehaviour
         if (!equippedWeapon) return;
         Destroy(equippedWeapon);
         equippedWeapon = null;
+        currentWeapon = null;
+    }
+
+    protected void OnAnimatorIK(int layerIndex)
+    {
+        if (!equippedWeapon || !currentWeapon) return;
+        charAnimController.SetCharacterIKAnimation(currentWeapon.rightHandIKTarget, currentWeapon.leftHandIKTarget);
     }
 }

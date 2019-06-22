@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using JetBrains.Annotations;
+using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class CharacterAnimationController : MonoBehaviour
@@ -56,5 +57,34 @@ public class CharacterAnimationController : MonoBehaviour
     public void SetWeaponAnimationProperties(int property)
     {
         anim.SetInteger(WeaponAnimationType, property);
+    }
+
+    public void SetCharacterIKAnimation([CanBeNull] Transform rightHandTarget, [CanBeNull] Transform leftHandTarget)
+    {
+        if (rightHandTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.RightHand, rightHandTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.RightHand, rightHandTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 0f);
+        }
+
+        if (leftHandTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.LeftHand, leftHandTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.LeftHand, leftHandTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 0f);
+        }
     }
 }

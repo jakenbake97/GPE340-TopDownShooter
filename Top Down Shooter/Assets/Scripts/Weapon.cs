@@ -1,8 +1,12 @@
+using System;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [Header("Weapon Settings"), SerializeField]
     private float fireRate;
+
+    public WeaponAnimationType animationType = WeaponAnimationType.hipFire;
 
     public enum WeaponAnimationType
     {
@@ -11,5 +15,7 @@ public class Weapon : MonoBehaviour
         HandgunGrip = 2
     }
 
-    public WeaponAnimationType animationType = WeaponAnimationType.hipFire;
+    [Header("IK Settings")] public Transform rightHandIKTarget;
+
+    public Transform leftHandIKTarget;
 }
