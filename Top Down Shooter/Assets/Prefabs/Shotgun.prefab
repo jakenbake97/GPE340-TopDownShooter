@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 1324359073113098438}
   - component: {fileID: -1214319949769764413}
   m_Layer: 0
-  m_Name: Heavy
+  m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -265,6 +265,8 @@ Transform:
   - {fileID: 2039055063063038906}
   - {fileID: 7261731098080540484}
   - {fileID: 1473102708700948289}
+  - {fileID: 1735293326250754509}
+  - {fileID: 2915965752174113607}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -280,7 +282,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb94f9ef38747759913a00fc28d5883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: 0.5
   animationType: 0
+  rightHandIKTarget: {fileID: 1735293326250754509}
+  leftHandIKTarget: {fileID: 2915965752174113607}
+--- !u!1 &2995227789404433339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2915965752174113607}
+  m_Layer: 0
+  m_Name: Left Hand IK Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2915965752174113607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995227789404433339}
+  m_LocalRotation: {x: 0.49628145, y: -0.07345895, z: 0.8284278, w: 0.24903026}
+  m_LocalPosition: {x: -0.1243, y: 0.0331, z: 0.0615}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324359073113098438}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 21.647001, y: 57.704002, z: 158.56401}
+--- !u!1 &3431973871047805408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735293326250754509}
+  m_Layer: 0
+  m_Name: Right Hand IK Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1735293326250754509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431973871047805408}
+  m_LocalRotation: {x: 0.10674555, y: -0.18220352, z: -0.6243281, w: 0.75207835}
+  m_LocalPosition: {x: 0.0519, y: -0.0039, z: -0.3414}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324359073113098438}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: -3.8390002, y: -24.096, z: -78.575005}
 --- !u!1 &6198224845025178519
 GameObject:
   m_ObjectHideFlags: 0
