@@ -32,6 +32,7 @@ public class Health : MonoBehaviour
 
     public void Damage(float damage)
     {
+        if (HealthValue <= 0) return;
         if (damage < 0) //damage must be positive
         {
             damage *= -1;

@@ -53,6 +53,7 @@ public class ShotgunWeapons : Weapon
                 barrel.rotation * Quaternion.Euler(Random.Range(-signedSpreadAngle, signedSpreadAngle) * Vector3.up));
             bullet.GetComponent<Bullet>().Damage = damage;
             bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce);
+            bullet.transform.parent = barrel;
             shootTime = Time.time + fireRate;
         }
 
