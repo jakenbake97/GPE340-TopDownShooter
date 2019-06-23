@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AutoWeapons.cs" t="Include" />
           <e p="Bullet.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CharacterAnimationController.cs" t="Include" />
@@ -18,6 +19,7 @@
           <e p="Pickup.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="SemiWeapons.cs" t="Include" />
+          <e p="ShotgunWeapons.cs" t="Include" />
           <e p="SilhouetteShader.shader" t="Include" />
           <e p="TestHealthText.cs" t="Include" />
           <e p="TestPickup.cs" t="Include" />

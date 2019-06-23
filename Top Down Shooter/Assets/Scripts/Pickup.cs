@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class Pickup : MonoBehaviour
 {
-    private const float lifeSpan = 60f;
+    [SerializeField] protected float lifeSpan = 60f;
 
     // Start is called before the first frame update
     private void Awake()
