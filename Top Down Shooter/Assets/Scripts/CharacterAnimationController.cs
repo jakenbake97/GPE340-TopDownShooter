@@ -59,7 +59,8 @@ public class CharacterAnimationController : MonoBehaviour
         anim.SetInteger(WeaponAnimationType, property);
     }
 
-    public void SetCharacterIKAnimation([CanBeNull] Transform rightHandTarget, [CanBeNull] Transform leftHandTarget)
+    public void SetCharacterIKAnimation([CanBeNull] Transform rightHandTarget, [CanBeNull] Transform leftHandTarget,
+                                        [CanBeNull] Transform rightElbowHint, [CanBeNull] Transform leftElbowHint)
     {
         if (rightHandTarget)
         {
@@ -85,6 +86,26 @@ public class CharacterAnimationController : MonoBehaviour
         {
             anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 0f);
             anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 0f);
+        }
+
+        if (rightElbowHint)
+        {
+            anim.SetIKHintPosition(AvatarIKHint.RightElbow, rightElbowHint.position);
+            anim.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 1f);
+        }
+        else
+        {
+            anim.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 0f);
+        }
+
+        if (leftElbowHint)
+        {
+            anim.SetIKHintPosition(AvatarIKHint.LeftElbow, leftElbowHint.position);
+            anim.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 1f);
+        }
+        else
+        {
+            anim.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 0f);
         }
     }
 }

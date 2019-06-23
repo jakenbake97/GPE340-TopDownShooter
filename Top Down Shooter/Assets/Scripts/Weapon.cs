@@ -38,6 +38,8 @@ public abstract class Weapon : MonoBehaviour
     [Header("IK Settings")] public Transform rightHandIKTarget;
 
     public Transform leftHandIKTarget;
+    public Transform rightElbowIKHint;
+    public Transform leftElbowIKHint;
 
     public abstract void Shoot();
 

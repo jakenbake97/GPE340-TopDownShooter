@@ -13905,6 +13905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c2e0bde1d98a64a9219ec628ce79ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 6975493877465643304, guid: 56c21afd47a746f4baafc55300862d4d,
+  weaponPrefab: {fileID: 2168404499911541984, guid: 4f2fa249b55d6b0439c5757089c5c8a4,
     type: 3}
   attachmentPoint: {fileID: 58359233}

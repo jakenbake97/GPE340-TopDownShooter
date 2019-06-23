@@ -256,7 +256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2610478474735794901}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.184, y: -0.195, z: 0.172}
+  m_LocalPosition: {x: 0.152, y: -0.343, z: 0.172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9179184395298322147}
@@ -268,6 +268,8 @@ Transform:
   - {fileID: 1735293326250754509}
   - {fileID: 2915965752174113607}
   - {fileID: 4206636140966489259}
+  - {fileID: 2390917177637143524}
+  - {fileID: 8126187813676013340}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -294,6 +296,8 @@ MonoBehaviour:
   barrel: {fileID: 4206636140966489259}
   rightHandIKTarget: {fileID: 1735293326250754509}
   leftHandIKTarget: {fileID: 2915965752174113607}
+  rightElbowIKHint: {fileID: 2390917177637143524}
+  leftElbowIKHint: {fileID: 8126187813676013340}
   bulletsToShoot: 10
   spreadAngle: 30
 --- !u!1 &2995227789404433339
@@ -356,6 +360,36 @@ Transform:
   m_Father: {fileID: 1324359073113098438}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -3.8390002, y: -24.096, z: -78.575005}
+--- !u!1 &4370712413841499424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2390917177637143524}
+  m_Layer: 0
+  m_Name: Right Elbow IK Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2390917177637143524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4370712413841499424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.063, y: 0, z: -0.564}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324359073113098438}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6198224845025178519
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +544,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &7443065903749327981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8126187813676013340}
+  m_Layer: 0
+  m_Name: Left Elbow IK Hint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8126187813676013340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7443065903749327981}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.325, y: 0.04, z: -0.177}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1324359073113098438}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8646140687522735091
 GameObject:
   m_ObjectHideFlags: 0

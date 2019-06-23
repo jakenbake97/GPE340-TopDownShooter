@@ -51,6 +51,7 @@ public class Player : MonoBehaviour
     protected void OnAnimatorIK(int layerIndex)
     {
         if (!equippedWeapon || !currentWeapon) return;
-        charAnimController.SetCharacterIKAnimation(currentWeapon.rightHandIKTarget, currentWeapon.leftHandIKTarget);
+        charAnimController.SetCharacterIKAnimation(currentWeapon.rightHandIKTarget, currentWeapon.leftHandIKTarget,
+            currentWeapon.rightElbowIKHint, currentWeapon.leftElbowIKHint);
     }
 }
