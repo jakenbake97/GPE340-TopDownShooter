@@ -18,7 +18,9 @@ public abstract class Weapon : MonoBehaviour
     protected int ammoLeft;
 
     protected bool reloading;
-    
+
+    public bool Equipped { protected get; set; }
+
 
     public WeaponAnimationType animationType = WeaponAnimationType.hipFire;
 

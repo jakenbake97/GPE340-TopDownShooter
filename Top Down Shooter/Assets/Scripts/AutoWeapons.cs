@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class SemiWeapons : Weapon
+public class AutoWeapons : Weapon
 {
     [SerializeField] private float spreadAngle;
 
     private float shootTime = 0f;
+
     private float signedSpreadAngle;
 
     private void Start()
@@ -25,7 +28,7 @@ public class SemiWeapons : Weapon
 
     private void ShootInput()
     {
-        if (!Input.GetMouseButtonDown(0)) return;
+        if (!Input.GetMouseButton(0)) return;
         if (!(Time.time >= shootTime)) return;
         if (ammoLeft > 0)
         {

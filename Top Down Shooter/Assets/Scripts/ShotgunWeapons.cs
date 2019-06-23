@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class SemiWeapons : Weapon
+public class ShotgunWeapons : Weapon
 {
+    [SerializeField, Range(1, 50)] private int bulletsToShoot;
     [SerializeField] private float spreadAngle;
 
     private float shootTime = 0f;
@@ -44,11 +47,15 @@ public class SemiWeapons : Weapon
 
     public override void Shoot()
     {
-        var bullet = Instantiate(bulletPrefab, barrel.position,
-            barrel.rotation * Quaternion.Euler(Random.Range(-signedSpreadAngle, signedSpreadAngle) * Vector3.up));
-        bullet.GetComponent<Bullet>().Damage = damage;
-        bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce);
-        shootTime = Time.time + fireRate;
+        for (int i = 0; i < bulletsToShoot; i++)
+        {
+            var bullet = Instantiate(bulletPrefab, barrel.position,
+                barrel.rotation * Quaternion.Euler(Random.Range(-signedSpreadAngle, signedSpreadAngle) * Vector3.up));
+            bullet.GetComponent<Bullet>().Damage = damage;
+            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce);
+            shootTime = Time.time + fireRate;
+        }
+
         ammoLeft--;
     }
 }

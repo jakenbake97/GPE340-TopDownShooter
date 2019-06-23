@@ -35,12 +35,14 @@ public class Player : MonoBehaviour
         equippedWeapon = Instantiate(prefab, attachmentPoint, false);
         //Get weapon offset from weapon itself
         currentWeapon = equippedWeapon.GetComponent<Weapon>();
+        currentWeapon.Equipped = true;
         charAnimController.SetWeaponAnimationProperties((int) currentWeapon.animationType);
     }
 
     public void UnequipWeapon()
     {
         if (!equippedWeapon) return;
+        currentWeapon.Equipped = false;
         Destroy(equippedWeapon);
         equippedWeapon = null;
         currentWeapon = null;
