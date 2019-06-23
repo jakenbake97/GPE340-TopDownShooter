@@ -531,6 +531,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6239375963773635387}
+  - component: {fileID: 8437724065199189172}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -562,6 +563,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8437724065199189172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6975493877465643304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d4983a095d2d44eace60c2752ceb8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0.15
+  damage: 20
+  ammo: 8
+  reloadTime: 2
+  bulletForce: 100
+  animationType: 2
+  bulletPrefab: {fileID: 6061362939230095205, guid: 6a316bff8be87264bae9edcd1146bd4a,
+    type: 3}
+  barrel: {fileID: 6868320056040908387}
+  rightHandIKTarget: {fileID: 7760145598025770408}
+  leftHandIKTarget: {fileID: 9024579548583369104}
+  spreadAngle: 10
 --- !u!1 &7005741536074735369
 GameObject:
   m_ObjectHideFlags: 0

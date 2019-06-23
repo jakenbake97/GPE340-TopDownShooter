@@ -17,6 +17,7 @@
           <e p="LightFollowsMouse.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="SemiWeapons.cs" t="Include" />
           <e p="SilhouetteShader.shader" t="Include" />
           <e p="TestHealthText.cs" t="Include" />
           <e p="TestPickup.cs" t="Include" />
