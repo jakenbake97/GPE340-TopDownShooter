@@ -6,7 +6,6 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
-    
     [Header("Health Stats"), SerializeField, Tooltip("The maximum health allowed")]
     private float maxHealth = 200f;
 
@@ -40,10 +39,9 @@ public class Health : MonoBehaviour
 
         HealthValue -= damage;
         onDamage.Invoke();
-        if (HealthValue <= 0f)
-        {
-            onDie.Invoke();
-        }
+        if (!(HealthValue <= 0f)) return;
+        onDie.Invoke();
+        Die();
     }
 
     public void Heal(float heal)
@@ -55,5 +53,10 @@ public class Health : MonoBehaviour
 
         HealthValue = Mathf.Clamp(HealthValue + heal, 0f, maxHealth);
         onHeal.Invoke();
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }

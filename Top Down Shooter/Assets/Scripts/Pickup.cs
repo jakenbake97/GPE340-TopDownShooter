@@ -31,12 +31,7 @@ public abstract class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //TODO: make player hold a reference to the player GameObject instead of a script on the player and search for
-        //PlayerData class.
-
-        Player player = other.GetComponent<Player>(); //Looking for inputManager, since Player class
-        //became CharacterAnimationController and could be 
-        //used by NPC
+        Player player = other.GetComponent<Player>();
 
 
         if (player)
