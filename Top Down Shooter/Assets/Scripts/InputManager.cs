@@ -26,26 +26,30 @@ public class InputManager : MonoBehaviour
         characterAnimations = GetComponent<CharacterAnimationController>();
     }
 
-    // Update is called once per frame
     private void Update()
     {
         AxisInput();
         MouseInputPlaneCast();
     }
 
-    private void AxisInput() //gets horizontal and vertical axis input and clamps the magnitude to 1, then passes input
-        //to characterAnimationController to move the character using root motion from
-        //the blend tree
+
+    /// <summary>
+    /// gets horizontal and vertical axis input and clamps the magnitude to 1, then passes input to
+    /// characterAnimationController to move the character using root motion from the blend tree
+    /// </summary>
+    private void AxisInput()
     {
         Vector3 input = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         input = Vector3.ClampMagnitude(input, 1f);
         characterAnimations.SetSpeed(input);
     }
 
-    private void MouseInputPlaneCast() //takes the mouse position and casts a ray from the screen point to the plane
-        //created in the awake method, if the ray hits something then it gets that
-        //point in world space and passes it to the CharacterAnimationController for
-        //rotation and the LightFollowsMouse to move the light to that point
+    /// <summary>
+    /// takes the mouse position and casts a ray from the screen point to the plane created in the awake method,
+    /// if the ray hits something then it gets that point in world space and passes it to the
+    /// characterAnimationController for rotation adn the LightFollowsMouse to move the light to that point
+    /// </summary>
+    private void MouseInputPlaneCast()
     {
         if (!_isMainNotNull) return;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

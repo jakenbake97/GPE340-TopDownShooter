@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class Health : MonoBehaviour
@@ -14,7 +11,7 @@ public class Health : MonoBehaviour
 
     public float HealthValue { get; private set; }
 
-    public float HealthPercent => HealthValue / maxHealth;
+    public float HealthPercent => HealthValue / maxHealth; //shorthand setter
 
     [Header("Events"), SerializeField, Tooltip("Activated every time the object is healed")]
     private UnityEvent onHeal;
@@ -30,6 +27,12 @@ public class Health : MonoBehaviour
         HealthValue = initialHealth;
     }
 
+    /// <summary>
+    /// called by external sources when something wants to damage this gameobject. First checks to make sure
+    /// the HealthValue isn't already 0, preventing from dieing multiple times in the same frame. then takes the
+    /// absolute value of the damage, preventing it from being negative and subtracts from the the HealthValue.
+    /// Next, Invokes the onDamage event, and if the object will die, calls the Die method
+    /// </summary>
     public void Damage(float damage)
     {
         if (HealthValue <= 0) return;
@@ -45,6 +48,11 @@ public class Health : MonoBehaviour
         Die();
     }
 
+    /// <summary>
+    /// called by external sources when something wants to heal this gameobject. First takes the absolute value of
+    /// the heal, preventing it from being negative, and adds it to a clamped HealthValue to prevent over healing.
+    /// Then Invokes the onHeal event
+    /// </summary>
     public void Heal(float heal)
     {
         if (heal < 0) //heal must be positive
@@ -56,6 +64,9 @@ public class Health : MonoBehaviour
         onHeal.Invoke();
     }
 
+    /// <summary>
+    /// simply destroys the gameobject when health reaches 0
+    /// </summary>
     private void Die()
     {
         Destroy(gameObject);

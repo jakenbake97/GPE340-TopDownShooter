@@ -24,8 +24,10 @@ public class CharacterAnimationController : MonoBehaviour
     }
 
 
-    ///<summary>takes input from input manager, converts it to local space, gives it a magnitude equal to the
-    /// max move speed and then passes the input to the setAnimationProperties method </summary>
+    ///<summary>
+    /// takes input from input manager, converts it to local space, gives it a magnitude equal to the
+    /// max move speed and then passes the input to the setAnimationProperties method
+    /// </summary>
     public void SetSpeed(Vector3 inputVector)
     {
         inputVector = transform.InverseTransformDirection(inputVector);
@@ -33,17 +35,21 @@ public class CharacterAnimationController : MonoBehaviour
         SetAnimationProperties(inputVector);
     }
 
-    ///<summary>sets the float parameters of the animator using the input vector and a hash ID representing the
-    ///variable string name</summary>
+    ///<summary>
+    /// sets the float parameters of the animator using the input vector and a hash ID representing the
+    ///variable string name
+    /// </summary>
     private void SetAnimationProperties(Vector3 inputVector)
     {
         anim.SetFloat(Horizontal, inputVector.x);
         anim.SetFloat(Vertical, inputVector.z);
     }
 
-    ///<summary>Takes a target point from the mouse position of the input manager and creates a quaternion for
+    ///<summary>
+    /// Takes a target point from the mouse position of the input manager and creates a quaternion for
     ///the rotation needed between the target point and current position, then rotates the game object towards
-    /// the target by rotationSpeed degrees per second </summary>
+    /// the target by rotationSpeed degrees per second
+    /// </summary>
     public void RotateTowardsPoint(Vector3 targetPoint)
     {
         var objectTransform = transform;
@@ -54,11 +60,18 @@ public class CharacterAnimationController : MonoBehaviour
             Quaternion.RotateTowards(objectTransform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
+    /// <summary>
+    /// sets the animation style depending on the weapon
+    /// </summary>
     public void SetWeaponAnimationProperties(int property)
     {
         anim.SetInteger(WeaponAnimationType, property);
     }
 
+    /// <summary>
+    /// Optionally takes 4 parameters for setting the IK targets and hints. Each target is then given a weight of 1 to
+    /// follow the IK points as best as possible
+    /// </summary>
     public void SetCharacterIKAnimation([CanBeNull] Transform rightHandTarget, [CanBeNull] Transform leftHandTarget,
                                         [CanBeNull] Transform rightElbowHint, [CanBeNull] Transform leftElbowHint)
     {

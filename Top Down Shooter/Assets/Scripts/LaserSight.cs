@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LaserSight : MonoBehaviour
 {
@@ -14,6 +11,10 @@ public class LaserSight : MonoBehaviour
         line = GetComponent<LineRenderer>();
     }
 
+    /// <summary>
+    /// if this weapon is equipped then we can enable the lineRenderer to draw the laser sight and set its start an
+    /// endpoints. it starts at the weapon's barrel and ends wherever the raycast collides with something
+    /// </summary>
     private void Update()
     {
         if (weaponRef.Equipped)

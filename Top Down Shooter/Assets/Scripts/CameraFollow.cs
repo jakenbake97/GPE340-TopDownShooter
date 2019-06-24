@@ -12,14 +12,15 @@ public class CameraFollow : MonoBehaviour
     private float cameraMoveSpeed = 4f;
 
 
-    // Update is called once per frame
     void Update()
     {
         AdjustCameraPosition();
     }
 
-    private void AdjustCameraPosition() //takes a target position and moves towards it based off of a step amount
-                                        //(cameraMoveSpeed per second)
+    /// <summary>
+    /// takes a target position and moves towards it based off of a set amount (cameraMoveSpeed-meters per second)
+    /// </summary>
+    private void AdjustCameraPosition()
     {
         var position = targetPosition.position;
         transform.position = Vector3.MoveTowards(transform.position,

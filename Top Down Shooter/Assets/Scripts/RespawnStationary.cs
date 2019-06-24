@@ -1,12 +1,18 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RespawnStationary : MonoBehaviour
 {
-    [SerializeField] private GameObject[] respawnObject;
-    [SerializeField] private float delayTimer;
+    [SerializeField, Tooltip("Array of objects this should randomly pull from to spawn")]
+    private GameObject[] respawnObject;
 
+    [SerializeField, Tooltip("How long it should take for an item to respawn")]
+    private float delayTimer;
+
+    /// <summary>
+    /// coroutine that picks a random item from the array to spawn and then instantiates it after waiting for a
+    /// certain amount of time
+    /// </summary>
     private IEnumerator Respawn()
     {
         int index = Random.Range(0, respawnObject.Length);
@@ -15,6 +21,9 @@ public class RespawnStationary : MonoBehaviour
         spawned.transform.parent = transform;
     }
 
+    /// <summary>
+    /// starts the coroutine when called by events
+    /// </summary>
     public void EventRespawn()
     {
         StartCoroutine(Respawn());
