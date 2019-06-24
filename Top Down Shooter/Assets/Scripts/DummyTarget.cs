@@ -9,7 +9,11 @@ public class DummyTarget : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        bulletParent = other.transform.parent;
+        var bullet = other.gameObject.GetComponent<Bullet>();
+        if (bullet)
+        {
+            bulletParent = bullet.origin;
+        }
     }
 
     public void LookAtShooter()

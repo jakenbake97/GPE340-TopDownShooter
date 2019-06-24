@@ -16,6 +16,7 @@
           <e p="HealPickup.cs" t="Include" />
           <e p="Health.cs" t="Include" />
           <e p="InputManager.cs" t="Include" />
+          <e p="LaserSight.cs" t="Include" />
           <e p="LightFollowsMouse.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />
           <e p="Player.cs" t="Include" />

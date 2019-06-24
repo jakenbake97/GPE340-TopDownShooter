@@ -19,7 +19,7 @@ public abstract class Weapon : MonoBehaviour
 
     protected bool reloading;
 
-    public bool Equipped { protected get; set; }
+    public bool Equipped { get; set; }
 
 
     public WeaponAnimationType animationType = WeaponAnimationType.hipFire;
@@ -33,7 +33,7 @@ public abstract class Weapon : MonoBehaviour
 
     [SerializeField] protected GameObject bulletPrefab;
 
-    [SerializeField] protected Transform barrel;
+    public Transform barrel;
 
     [Header("IK Settings")] public Transform rightHandIKTarget;
 

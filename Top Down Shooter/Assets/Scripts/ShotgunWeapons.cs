@@ -51,9 +51,11 @@ public class ShotgunWeapons : Weapon
         {
             var bullet = Instantiate(bulletPrefab, barrel.position,
                 barrel.rotation * Quaternion.Euler(Random.Range(-signedSpreadAngle, signedSpreadAngle) * Vector3.up));
-            bullet.GetComponent<Bullet>().Damage = damage;
+            var bulletScript = bullet.GetComponent<Bullet>();
+            bulletScript.Damage = damage;
+            bulletScript.origin = transform;
             bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce);
-            bullet.transform.parent = barrel;
+
             shootTime = Time.time + fireRate;
         }
 
