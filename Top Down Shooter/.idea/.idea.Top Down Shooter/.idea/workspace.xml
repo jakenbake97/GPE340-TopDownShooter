@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Animation Controller/vanguard controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Animation Controller/vanguard controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test Scene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test Scene/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,13 +84,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="700">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
-                <marker date="1561681126258" expanded="true" signature="6:100" ph="..." />
-                <marker date="1561681126258" expanded="true" signature="177:516" ph="{...}" />
-                <marker date="1561681126258" expanded="true" signature="331:389" ph="{...}" />
-                <marker date="1561681126258" expanded="true" signature="455:514" ph="{...}" />
+                <marker date="1561686191988" expanded="true" signature="6:114" ph="..." />
+                <marker date="1561686191988" expanded="true" signature="209:1122" ph="{...}" />
+                <marker date="1561686191988" expanded="true" signature="596:695" ph="{...}" />
+                <marker date="1561686191988" expanded="true" signature="761:1033" ph="{...}" />
+                <marker date="1561686191988" expanded="true" signature="1068:1120" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -279,15 +280,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,11 +351,12 @@
       <workItem from="1561306215682" duration="21287000" />
       <workItem from="1561345856386" duration="1029000" />
       <workItem from="1561680919073" duration="588000" />
+      <workItem from="1561685307534" duration="884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64917000" />
+    <option name="totallyTimeSpent" value="65801000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -367,8 +369,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14382201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1450139" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -676,6 +679,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LaserSight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <marker date="1561343577827" expanded="true" signature="59:902" ph="{...}" />
+            <marker date="1561343577827" expanded="true" signature="148:249" ph="{...}" />
+            <marker date="1561343577827" expanded="true" signature="255:509" ph="/// if this weapon is equipped then we can enable the lineRenderer to draw the laser sight and set its start an ... " />
+            <marker date="1561343577827" expanded="true" signature="535:900" ph="{...}" />
+            <marker date="1561343577827" expanded="true" signature="573:894" ph="{...}" />
+            <marker date="1561343577827" expanded="true" signature="808:884" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -772,30 +790,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/LaserSight.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <marker date="1561343577827" expanded="true" signature="59:902" ph="{...}" />
-            <marker date="1561343577827" expanded="true" signature="148:249" ph="{...}" />
-            <marker date="1561343577827" expanded="true" signature="255:509" ph="/// if this weapon is equipped then we can enable the lineRenderer to draw the laser sight and set its start an ... " />
-            <marker date="1561343577827" expanded="true" signature="535:900" ph="{...}" />
-            <marker date="1561343577827" expanded="true" signature="573:894" ph="{...}" />
-            <marker date="1561343577827" expanded="true" signature="808:884" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="700">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
           <folding>
-            <marker date="1561681126258" expanded="true" signature="6:100" ph="..." />
-            <marker date="1561681126258" expanded="true" signature="177:516" ph="{...}" />
-            <marker date="1561681126258" expanded="true" signature="331:389" ph="{...}" />
-            <marker date="1561681126258" expanded="true" signature="455:514" ph="{...}" />
+            <marker date="1561686191988" expanded="true" signature="6:114" ph="..." />
+            <marker date="1561686191988" expanded="true" signature="209:1122" ph="{...}" />
+            <marker date="1561686191988" expanded="true" signature="596:695" ph="{...}" />
+            <marker date="1561686191988" expanded="true" signature="761:1033" ph="{...}" />
+            <marker date="1561686191988" expanded="true" signature="1068:1120" ph="{...}" />
           </folding>
         </state>
       </provider>
