@@ -31,7 +31,11 @@ public class AutoWeapons : Weapon
     /// </summary>
     private void ShootInput()
     {
-        if (!Input.GetMouseButton(0)) return;
+        if (player)
+        {
+            if (!Input.GetMouseButton(0)) return;
+        }
+
         if (!(Time.time >= shootTime)) return;
         if (ammoLeft > 0)
         {

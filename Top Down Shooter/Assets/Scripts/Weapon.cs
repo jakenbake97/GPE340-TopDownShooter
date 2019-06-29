@@ -52,6 +52,8 @@ public abstract class Weapon : MonoBehaviour
     [Tooltip("The Transform component to represent the target for IK")]
     public Transform leftElbowIKHint;
 
+    [HideInInspector] public bool player = false;
+
     /// <summary>
     /// abstract method that must be overridden in child classes
     /// </summary>

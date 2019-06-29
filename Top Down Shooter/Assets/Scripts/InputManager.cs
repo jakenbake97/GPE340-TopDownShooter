@@ -7,6 +7,8 @@ public class InputManager : MonoBehaviour
 
     private CharacterAnimationController characterAnimations;
 
+    private Player player;
+
     //boolean to store a check to see if main camera is not null
     private bool _isMainNotNull;
     private Plane plane;
@@ -24,6 +26,7 @@ public class InputManager : MonoBehaviour
     private void Start()
     {
         characterAnimations = GetComponent<CharacterAnimationController>();
+        player = GetComponent<Player>();
     }
 
     private void Update()

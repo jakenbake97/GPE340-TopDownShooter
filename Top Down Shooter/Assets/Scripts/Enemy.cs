@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent), typeof(Animator))]
-public class Enemy : MonoBehaviour
+[RequireComponent(typeof(NavMeshAgent))]
+public class Enemy : WeaponAgent
 {
     private NavMeshAgent agent;
-    private Animator anim;
 
 
     private Player target;
@@ -18,10 +17,10 @@ public class Enemy : MonoBehaviour
 
 
     // Start is called before the first frame update
-    private void Awake()
+    public override void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
+        base.Awake();
     }
 
     // Update is called once per frame

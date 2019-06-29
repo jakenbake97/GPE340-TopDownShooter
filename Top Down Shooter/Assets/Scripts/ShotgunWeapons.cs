@@ -12,6 +12,7 @@ public class ShotgunWeapons : Weapon
     private float shootTime = 0f;
     private float signedSpreadAngle;
 
+
     private void Start()
     {
         ammoLeft = ammo;
@@ -33,7 +34,11 @@ public class ShotgunWeapons : Weapon
     /// </summary>
     private void ShootInput()
     {
-        if (!Input.GetMouseButtonDown(0)) return;
+        if (player)
+        {
+            if (!Input.GetMouseButtonDown(0)) return;
+        }
+
         if (!(Time.time >= shootTime)) return;
         if (ammoLeft > 0)
         {
