@@ -1,17 +1,42 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(CharacterAnimationController), typeof(InputManager))]
 public class Player : WeaponAgent
 {
     private CharacterAnimationController charAnimController;
 
+    [Header("Weapon Settings"), SerializeField, Tooltip("The prefab for the default weapon to be equipped")]
+    private GameObject weaponPrefab;
+
+    [HideInInspector] public bool mouseDown = false;
+
+    [HideInInspector] public float mouseDownTime;
 
     public override void Awake()
     {
         charAnimController = GetComponent<CharacterAnimationController>();
+        EquipWeapon(weaponPrefab);
         base.Awake();
     }
 
+    private void Update()
+    {
+        if (!mouseDown) return;
+        if (currentWeapon.fireOnClickDown)
+        {
+            if (mouseDownTime <= Time.deltaTime)
+            {
+                currentWeapon.processShoot();
+            }
+        }
+        else
+        {
+            currentWeapon.processShoot();
+        }
+
+        mouseDownTime += Time.deltaTime;
+    }
 
     /// <summary>
     /// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands

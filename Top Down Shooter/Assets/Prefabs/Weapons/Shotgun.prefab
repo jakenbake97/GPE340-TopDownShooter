@@ -290,16 +290,20 @@ MonoBehaviour:
   ammo: 6
   reloadTime: 4
   bulletForce: 80
+  spreadAngle: 30
+  fireOnClickDown: 0
   animationType: 0
   bulletPrefab: {fileID: 6061362939230095205, guid: 6a316bff8be87264bae9edcd1146bd4a,
     type: 3}
   barrel: {fileID: 4206636140966489259}
+  attackAngle: 30
+  maxRange: 10
   rightHandIKTarget: {fileID: 1735293326250754509}
   leftHandIKTarget: {fileID: 2915965752174113607}
   rightElbowIKHint: {fileID: 2390917177637143524}
   leftElbowIKHint: {fileID: 8126187813676013340}
+  player: 0
   bulletsToShoot: 10
-  spreadAngle: 30
 --- !u!1 &2995227789404433339
 GameObject:
   m_ObjectHideFlags: 0

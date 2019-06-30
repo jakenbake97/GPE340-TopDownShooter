@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class Enemy : WeaponAgent
@@ -14,12 +15,13 @@ public class Enemy : WeaponAgent
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
     private Vector3 desiredVelocity;
+    [SerializeField] private GameObject[] weaponPrefabs;
 
 
-    // Start is called before the first frame update
     public override void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        base.EquipWeapon(weaponPrefabs[Random.Range(0, weaponPrefabs.Length)]);
         base.Awake();
     }
 
@@ -40,6 +42,13 @@ public class Enemy : WeaponAgent
         Vector3 input = transform.InverseTransformDirection(desiredVelocity);
         anim.SetFloat(Horizontal, input.x);
         anim.SetFloat(Vertical, input.z);
+
+        if (!(Vector3.Angle(transform.forward, target.transform.position) <= currentWeapon.attackAngle)) return;
+        if (Vector3.SqrMagnitude(transform.position - target.transform.position) <=
+            currentWeapon.maxRange * currentWeapon.maxRange)
+        {
+            currentWeapon.processShoot();
+        }
     }
 
     private void OnAnimatorMove()

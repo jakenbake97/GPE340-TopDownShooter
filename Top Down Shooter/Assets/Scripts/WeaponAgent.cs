@@ -11,8 +11,6 @@ public class WeaponAgent : MonoBehaviour
 
     protected Animator anim;
 
-    [Header("Weapon Settings"), SerializeField, Tooltip("The prefab for the default weapon to be equipped")]
-    protected GameObject weaponPrefab;
 
     protected GameObject equippedWeapon;
 
@@ -25,7 +23,6 @@ public class WeaponAgent : MonoBehaviour
     {
         Health = GetComponent<Health>();
         anim = GetComponent<Animator>();
-        EquipWeapon(weaponPrefab);
         currentWeapon = equippedWeapon.GetComponent<Weapon>();
     }
 

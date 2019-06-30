@@ -19,9 +19,18 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField, Tooltip("The amount of force to add to the bullet's rigidbody after spawning")]
     protected float bulletForce;
 
+    [SerializeField, Tooltip("The maximum angle in degrees the bullets can deviate from the center line\n" +
+                             "An angle of 10 means 5 degrees on either side of the center line")]
+    protected float spreadAngle;
+
+    [HideInInspector] public bool fireOnClickDown;
+
     protected int ammoLeft;
 
     protected bool reloading;
+
+    protected float
+        signedSpreadAngle; // holds half of the spread angle so it can be placed half positive, half negative
 
     public bool Equipped { get; set; }
 
@@ -40,6 +49,11 @@ public abstract class Weapon : MonoBehaviour
 
     public Transform barrel;
 
+    [Header("AI Settings"), Range(1f, 180f)]
+    public float attackAngle = 10f;
+
+    public float maxRange = 20f;
+
     [Header("IK Settings")] [Tooltip("The Transform component to represent the target for IK")]
     public Transform rightHandIKTarget;
 
@@ -53,21 +67,45 @@ public abstract class Weapon : MonoBehaviour
     public Transform leftElbowIKHint;
 
     [HideInInspector] public bool player = false;
+    protected float timeToShoot = 0f;
 
     /// <summary>
     /// abstract method that must be overridden in child classes
     /// </summary>
-    public abstract void Shoot();
+    protected abstract void Shoot();
 
     /// <summary>
     /// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing
     /// the weapon to be used again
     /// </summary>
-    protected IEnumerator Reload()
+    private IEnumerator Reload()
     {
         reloading = true;
         ammoLeft = ammo;
         yield return new WaitForSeconds(reloadTime);
         reloading = false;
+    }
+
+    public void processShoot()
+    {
+        if (reloading) return;
+
+        if (Time.time >= timeToShoot && ammoLeft > 0)
+        {
+            Shoot();
+        }
+        else if (ammoLeft == 0)
+        {
+            StartReload();
+        }
+    }
+
+    /// <summary>
+    /// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in,
+    /// while still allowing everything to operate normally
+    /// </summary>
+    public void StartReload()
+    {
+        StartCoroutine(Reload());
     }
 }

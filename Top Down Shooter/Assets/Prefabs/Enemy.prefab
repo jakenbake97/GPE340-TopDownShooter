@@ -1057,9 +1057,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa02a3b15e7762b4c9d1ce3b7fc5ce24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponPrefab: {fileID: 1746760181074402851, guid: 4499a3dab96dcb74f9ad2fa406513bb2,
-    type: 3}
   attachmentPoint: {fileID: 5517756340664978211}
+  weaponPrefabs:
+  - {fileID: 6975493877465643304, guid: 56c21afd47a746f4baafc55300862d4d, type: 3}
+  - {fileID: 1746760181074402851, guid: 4499a3dab96dcb74f9ad2fa406513bb2, type: 3}
+  - {fileID: 2610478474735794901, guid: aed05fbedcafa954783ffd886f161090, type: 3}
+  - {fileID: 2168404499911541984, guid: 4f2fa249b55d6b0439c5757089c5c8a4, type: 3}
 --- !u!195 &5517756341416345848
 NavMeshAgent:
   m_ObjectHideFlags: 0

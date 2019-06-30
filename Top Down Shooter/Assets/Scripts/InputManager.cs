@@ -33,6 +33,20 @@ public class InputManager : MonoBehaviour
     {
         AxisInput();
         MouseInputPlaneCast();
+        MouseClickInput();
+    }
+
+    private void MouseClickInput()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            player.mouseDown = true;
+            player.mouseDownTime = 0f;
+        }
+
+        if (!Input.GetMouseButtonUp(0)) return;
+        player.mouseDown = false;
+        player.mouseDownTime = 0f;
     }
 
 
