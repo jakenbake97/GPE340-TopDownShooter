@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(CharacterAnimationController), typeof(InputManager))]
 public class Player : WeaponAgent
@@ -13,16 +12,41 @@ public class Player : WeaponAgent
 
     [HideInInspector] public float mouseDownTime;
 
+    [HideInInspector] public bool reloadInput = false;
+    [HideInInspector] public bool slowMoInput = false;
+    private TimeController timeController;
+
     public override void Awake()
     {
         charAnimController = GetComponent<CharacterAnimationController>();
         EquipWeapon(weaponPrefab);
+        timeController = GetComponent<TimeController>();
         base.Awake();
     }
 
     private void Update()
     {
+        if (slowMoInput)
+        {
+            timeController.DoSlowMotion(charAnimController);
+            slowMoInput = false;
+        }
+
+        if (reloadInput)
+        {
+            currentWeapon.StartReload();
+            reloadInput = false;
+        }
+
+        MouseDownWeaponControl();
+    }
+
+    private void MouseDownWeaponControl()
+    {
         if (!mouseDown) return;
+        if (!currentWeapon) return;
+
+
         if (currentWeapon.fireOnClickDown)
         {
             if (mouseDownTime <= Time.deltaTime)
@@ -34,6 +58,7 @@ public class Player : WeaponAgent
         {
             currentWeapon.processShoot();
         }
+
 
         mouseDownTime += Time.deltaTime;
     }

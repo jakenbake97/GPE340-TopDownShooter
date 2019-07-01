@@ -22,6 +22,7 @@ public class CameraFollow : MonoBehaviour
     /// </summary>
     private void AdjustCameraPosition()
     {
+        if (!targetPosition) return;
         var position = targetPosition.position;
         transform.position = Vector3.MoveTowards(transform.position,
             new Vector3(position.x, position.y + cameraHeight, position.z),

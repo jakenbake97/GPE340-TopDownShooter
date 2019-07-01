@@ -34,6 +34,20 @@ public class InputManager : MonoBehaviour
         AxisInput();
         MouseInputPlaneCast();
         MouseClickInput();
+        MiscKeyInput();
+    }
+
+    private void MiscKeyInput()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            player.reloadInput = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            player.slowMoInput = true;
+        }
     }
 
     private void MouseClickInput()

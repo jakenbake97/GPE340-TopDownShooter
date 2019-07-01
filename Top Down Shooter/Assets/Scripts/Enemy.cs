@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -25,11 +23,17 @@ public class Enemy : WeaponAgent
         base.Awake();
     }
 
+    private void Start()
+    {
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+    }
+
     // Update is called once per frame
     private void Update()
     {
         target = FindObjectOfType<Player>();
-        if (!target)
+
+        if (!target || target.Health.HealthValue <= 0f)
         {
             agent.isStopped = true;
             anim.SetFloat(Horizontal, 0f);

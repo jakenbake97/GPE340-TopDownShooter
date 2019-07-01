@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
     private UnityEvent onDamage;
 
     [SerializeField, Tooltip("Activated once when the object's healthValue reaches 0")]
-    private UnityEvent onDie;
+    public UnityEvent onDie;
 
     private void Awake()
     {
@@ -45,7 +45,6 @@ public class Health : MonoBehaviour
         onDamage.Invoke();
         if (!(HealthValue <= 0f)) return;
         onDie.Invoke();
-        Die();
     }
 
     /// <summary>
@@ -62,13 +61,5 @@ public class Health : MonoBehaviour
 
         HealthValue = Mathf.Clamp(HealthValue + heal, 0f, maxHealth);
         onHeal.Invoke();
-    }
-
-    /// <summary>
-    /// simply destroys the gameobject when health reaches 0
-    /// </summary>
-    private void Die()
-    {
-        Destroy(gameObject);
     }
 }

@@ -7,10 +7,10 @@ public class CharacterAnimationController : MonoBehaviour
     [Header("Movement Settings")] [SerializeField, Tooltip("The max speed of the player (in meters per second")]
     private float moveSpeed = 4f;
 
-    [SerializeField, Tooltip("The rotations speed of the player (in degrees per second)")]
-    private float rotationSpeed = 90f;
+    [Tooltip("The rotations speed of the player (in degrees per second)")]
+    public float rotationSpeed = 90f;
 
-    private Animator anim;
+    [HideInInspector] public Animator anim;
 
 
     // int variables that hold a converted animator look up to increase performance, per the suggestion of Rider
