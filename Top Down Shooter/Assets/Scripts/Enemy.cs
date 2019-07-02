@@ -31,6 +31,17 @@ public class Enemy : WeaponAgent
     // Update is called once per frame
     private void Update()
     {
+        if (!UpdateAgentForTarget()) return;
+
+        DetermineShoot();
+    }
+
+    /// <summary>
+    /// Looks for a target player, if one is found then updates the NavMeshAgent and the animator,
+    /// if a player is not found then the agent stops and returns false preventing the agent from moving or shooting
+    /// </summary>
+    private bool UpdateAgentForTarget()
+    {
         target = FindObjectOfType<Player>();
 
         if (!target || target.Health.HealthValue <= 0f)
@@ -38,7 +49,7 @@ public class Enemy : WeaponAgent
             agent.isStopped = true;
             anim.SetFloat(Horizontal, 0f);
             anim.SetFloat(Vertical, 0f);
-            return;
+            return false;
         }
 
         agent.SetDestination(target.transform.position);
@@ -46,7 +57,15 @@ public class Enemy : WeaponAgent
         Vector3 input = transform.InverseTransformDirection(desiredVelocity);
         anim.SetFloat(Horizontal, input.x);
         anim.SetFloat(Vertical, input.z);
+        return true;
+    }
 
+    /// <summary>
+    /// Calculates the angle between the agent and the player to determine if it is point at the player, then
+    /// calculates distance to determine if it is in range
+    /// </summary>
+    private void DetermineShoot()
+    {
         if (!(Vector3.Angle(transform.forward, target.transform.position) <= currentWeapon.attackAngle)) return;
         if (Vector3.SqrMagnitude(transform.position - target.transform.position) <=
             currentWeapon.maxRange * currentWeapon.maxRange)
@@ -55,6 +74,9 @@ public class Enemy : WeaponAgent
         }
     }
 
+    /// <summary>
+    /// Sets the animator velocity to that of the agent's
+    /// </summary>
     private void OnAnimatorMove()
     {
         agent.velocity = anim.velocity;

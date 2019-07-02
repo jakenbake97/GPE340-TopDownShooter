@@ -37,6 +37,9 @@ public class InputManager : MonoBehaviour
         MiscKeyInput();
     }
 
+    /// <summary>
+    /// Searches for input on various miscellaneous keys and then tells the player that the key has been pressed
+    /// </summary>
     private void MiscKeyInput()
     {
         if (Input.GetKeyDown(KeyCode.R))
@@ -50,6 +53,9 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Searches for mouse button input and then tells the player that the button has been pressed
+    /// </summary>
     private void MouseClickInput()
     {
         if (Input.GetMouseButtonDown(0))

@@ -21,6 +21,9 @@ public class Ragdoll : MonoBehaviour
         ConvertToNormal();
     }
 
+    /// <summary>
+    /// switch the model to ragdoll mode by calculating physics on rigibodies and enabling colliders
+    /// </summary>
     public void ConvertToRagdoll()
     {
         foreach (var rB in childRBs)
@@ -38,7 +41,10 @@ public class Ragdoll : MonoBehaviour
         animator.enabled = false;
     }
 
-    public void ConvertToNormal()
+    /// <summary>
+    /// switch the model to normal mode by disabling physics on rigidbodies and disabling colliders
+    /// </summary>
+    private void ConvertToNormal()
     {
         foreach (var rB in childRBs)
         {

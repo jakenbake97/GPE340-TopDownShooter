@@ -86,6 +86,9 @@ public abstract class Weapon : MonoBehaviour
         reloading = false;
     }
 
+    /// <summary>
+    /// Called from weaponAgents, this determines if the weapon is allowed to fire or not
+    /// </summary>
     public void processShoot()
     {
         if (reloading) return;

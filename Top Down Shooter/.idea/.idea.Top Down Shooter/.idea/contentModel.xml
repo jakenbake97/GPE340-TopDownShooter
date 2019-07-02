@@ -29,11 +29,11 @@
           <e p="ShotgunWeapons.cs" t="Include" />
           <e p="SilhouetteShader.shader" t="Include" />
           <e p="TestHealthText.cs" t="Include" />
+          <e p="TimeController.cs" t="Include" />
           <e p="Weapon.cs" t="Include" />
           <e p="WeaponAgent.cs" t="Include" />
           <e p="WeaponPickup.cs" t="Include" />
         </e>
-        <e p="TimeController.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />

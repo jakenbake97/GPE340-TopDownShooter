@@ -4,6 +4,9 @@ public class DrawBox : MonoBehaviour
 {
     public Vector3 scale;
 
+    /// <summary>
+    /// Draws a box to show where an enemy will spawn
+    /// </summary>
     private void OnDrawGizmos()
     {
         Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);

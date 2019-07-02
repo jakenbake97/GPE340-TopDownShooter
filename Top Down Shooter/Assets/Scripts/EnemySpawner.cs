@@ -16,6 +16,9 @@ public class EnemySpawner : MonoBehaviour
         InvokeRepeating(nameof(SpawnEnemy), 0f, spawnDelay);
     }
 
+    /// <summary>
+    /// Instantiates a random enemy at a random spawn point
+    /// </summary>
     private void SpawnEnemy()
     {
         if (currentActiveEnemies >= maxActiveEnemies) return;
@@ -38,6 +41,9 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// removes the dead enemy from the currently active count
+    /// </summary>
     private void HandleEnemyDeath()
     {
         currentActiveEnemies--;

@@ -5,9 +5,16 @@ using UnityEngine;
 
 public class TimeController : MonoBehaviour
 {
-    public float slowDownFactor = 0.25f;
-    public float slowDownLength = 5f;
-    public float abilityCoolDown = 10f;
+    [SerializeField, Tooltip("The value timescale should be changed to\n " +
+                             "for example, 0.5 maps 1/2 second in game to 1 second realtime")]
+    private float slowDownFactor = 0.25f;
+
+    [SerializeField, Tooltip("The amount of time in realtime seconds the slowdown should be applied")]
+    private float slowDownLength = 5f;
+
+    [SerializeField, Tooltip("The amount of time after resuming realtime time scale that this ability should cooldown")]
+    private float abilityCoolDown = 10f;
+
     private float timeMultiplier;
     private float nextUse = 0f;
     private bool slowMo = false;
@@ -16,6 +23,10 @@ public class TimeController : MonoBehaviour
     private CharacterAnimationController characterAnimationController;
     private float originalRotation;
 
+    /// <summary>
+    /// Called from the Player Class, this sets the timescale to be slowed down and speeds up the animator so the
+    /// player moves at the same speed relative to the world in realtime
+    /// </summary>
     public void DoSlowMotion(CharacterAnimationController animatorController)
     {
         if (!(Time.time >= nextUse)) return;
@@ -34,6 +45,15 @@ public class TimeController : MonoBehaviour
     private void Update()
     {
         if (!slowMo) return;
+        ResumeRealTime();
+    }
+
+
+    /// <summary>
+    /// Converts time back to realtime and slows the animator back down to normal speed
+    /// </summary>
+    private void ResumeRealTime()
+    {
         if (!(exitTime <= Time.unscaledTime)) return;
         Time.timeScale = 1;
         characterAnimationController.anim.speed = 1f;

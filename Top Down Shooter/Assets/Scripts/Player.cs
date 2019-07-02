@@ -41,6 +41,10 @@ public class Player : WeaponAgent
         MouseDownWeaponControl();
     }
 
+    /// <summary>
+    /// If the fire button is being pressed, determine if the weapon is semi or automatic and shoot if the mouse
+    /// down time is appropriate
+    /// </summary>
     private void MouseDownWeaponControl()
     {
         if (!mouseDown) return;
