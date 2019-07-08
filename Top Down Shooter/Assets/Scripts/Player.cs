@@ -24,6 +24,7 @@ public class Player : WeaponAgent
         EquipWeapon(weaponPrefab);
         timeController = GetComponent<TimeController>();
         base.Awake();
+        UIManager.Instance.RegisterPlayer(this);
     }
 
     private void Update()
