@@ -55,6 +55,7 @@ public abstract class Pickup : MonoBehaviour
     protected virtual void OnPickUp(Player player)
     {
         Destroy(gameObject);
-        gameObject.GetComponentInParent<RespawnStationary>().EventRespawn();
+        var respawnStationary = gameObject.GetComponentInParent<RespawnStationary>();
+        respawnStationary?.EventRespawn();
     }
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,65 +17,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <marker date="1561922634308" expanded="true" signature="53:1008" ph="{...}" />
-                <marker date="1561922634308" expanded="true" signature="80:195" ph="{...}" />
-                <marker date="1561922634308" expanded="true" signature="202:487" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-                <marker date="1561922634308" expanded="true" signature="523:1006" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
-              <folding>
-                <marker date="1562025885305" expanded="true" signature="6:44" ph="..." />
-                <marker date="1562025885305" expanded="true" signature="91:3425" ph="{...}" />
-                <marker date="1562025885305" expanded="true" signature="711:913" ph="[...]" />
-                <marker date="1562025885305" expanded="true" signature="1344:1424" ph="{...}" />
-                <marker date="1562025885305" expanded="true" signature="2257:2354" ph="/// abstract method that must be overridden in child classes ... " />
-                <marker date="1562025885305" expanded="true" signature="2397:2578" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
-                <marker date="1562025885305" expanded="true" signature="2611:2754" ph="{...}" />
-                <marker date="1562025885305" expanded="true" signature="2760:2882" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
-                <marker date="1562025885305" expanded="true" signature="2913:3131" ph="{...}" />
-                <marker date="1562025885305" expanded="true" signature="3005:3046" ph="{...}" />
-                <marker date="1562025885305" expanded="true" signature="3078:3125" ph="{...}" />
-                <marker date="1562025885305" expanded="true" signature="3137:3347" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
-                <marker date="1562025885305" expanded="true" signature="3377:3423" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="980">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-              <folding>
-                <marker date="1562016857500" expanded="true" signature="176:1582" ph="{...}" />
-                <marker date="1562016857500" expanded="true" signature="485:642" ph="{...}" />
-                <marker date="1562016857500" expanded="true" signature="648:878" ph="/// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands ... " />
-                <marker date="1562016857500" expanded="true" signature="933:1164" ph="{...}" />
-                <marker date="1562016857500" expanded="true" signature="1170:1365" ph="/// When a new weapon is picked up we need to get rid of the old one, to this destroys the current weapon and ... " />
-                <marker date="1562016857500" expanded="true" signature="1397:1580" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="260">
               <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <marker date="1561345309566" expanded="true" signature="54:518" ph="{...}" />
@@ -85,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="140">
               <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
               <folding>
                 <marker date="1561922634306" expanded="true" signature="56:1317" ph="{...}" />
@@ -98,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1029">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            <state relative-caret-position="1040">
+              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <marker date="1562025856725" expanded="true" signature="6:92" ph="..." />
                 <marker date="1562025856725" expanded="true" signature="137:2418" ph="{...}" />
@@ -112,6 +60,63 @@
                 <marker date="1562025856725" expanded="true" signature="1849:1916" ph="{...}" />
                 <marker date="1562025856725" expanded="true" signature="1923:2043" ph="/// Converts time back to realtime and slows the animator back down to normal speed ... " />
                 <marker date="1562025856725" expanded="true" signature="2077:2416" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <marker date="1562542134220" expanded="true" signature="6:146" ph="..." />
+                <marker date="1562542134220" expanded="true" signature="193:2155" ph="{...}" />
+                <marker date="1562542134220" expanded="true" signature="531:740" ph="{...}" />
+                <marker date="1562542134220" expanded="true" signature="746:1139" ph="[...]" />
+                <marker date="1562542134220" expanded="true" signature="1244:1516" ph="{...}" />
+                <marker date="1562542134220" expanded="true" signature="1384:1510" ph="{...}" />
+                <marker date="1562542134220" expanded="true" signature="1546:1756" ph="{...}" />
+                <marker date="1562542134220" expanded="true" signature="1782:1818" ph="{...}" />
+                <marker date="1562542134220" expanded="true" signature="1846:2153" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1180">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding>
+                <marker date="1562541833022" expanded="true" signature="64:1647" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="341:378" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="405:454" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="460:578" ph="/// counts down the lifespan of the gameobject using the delayed destroy overload ... " />
+                <marker date="1562541833022" expanded="true" signature="614:662" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="668:774" ph="/// simply spins the pickup a specified amount, in degrees per second ... " />
+                <marker date="1562541833022" expanded="true" signature="826:909" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="915:1042" ph="/// when the player enters the trigger for this object, it calls the virtual pickup method ... " />
+                <marker date="1562541833022" expanded="true" signature="1090:1228" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="1172:1222" ph="{...}" />
+                <marker date="1562541833022" expanded="true" signature="1234:1424" ph="/// sets the basic functionality for pickups, destroys them and says its time to respawn. ... " />
+                <marker date="1562541833022" expanded="true" signature="1475:1645" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Editor/WeightedObjectDrawer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <marker date="1562538930139" expanded="false" signature="6:97" ph="..." />
+                <marker date="1562538930139" expanded="true" signature="213:1042" ph="{...}" />
+                <marker date="1562538930139" expanded="true" signature="308:1040" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -136,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-771">
+            <state relative-caret-position="40">
               <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
               <folding>
                 <marker date="1562025414098" expanded="true" signature="132:2849" ph="{...}" />
@@ -161,7 +166,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
+            <state relative-caret-position="560">
               <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding>
                 <marker date="1562025525529" expanded="true" signature="6:92" ph="..." />
@@ -183,7 +188,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="400">
               <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <marker date="1561344425636" expanded="true" signature="6:44" ph="..." />
@@ -228,6 +233,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DamagePickup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -235,6 +241,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DummyTarget.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/WeightedObjectDrawer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -249,9 +256,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HealPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserSight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs" />
@@ -269,14 +274,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/WeightedObjectDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="306" />
-    <option name="y" value="-15" />
-    <option name="width" value="1932" />
-    <option name="height" value="1052" />
+    <option name="x" value="503" />
+    <option name="y" value="-16" />
+    <option name="width" value="1449" />
+    <option name="height" value="781" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -284,29 +293,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,10 +334,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="19008">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="19008" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -376,11 +371,12 @@
       <workItem from="1561912036600" duration="6806000" />
       <workItem from="1562014396606" duration="9818000" />
       <workItem from="1562026078645" duration="1421000" />
+      <workItem from="1562537412324" duration="4717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91468000" />
+    <option name="totallyTimeSpent" value="96185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -393,8 +389,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10965435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11044895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -402,7 +399,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299923" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993832" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -719,30 +716,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+        <state relative-caret-position="160">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
           <folding>
-            <marker date="1561343963897" expanded="true" signature="64:1595" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="341:378" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="405:454" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="460:578" ph="/// counts down the lifespan of the gameobject using the delayed destroy overload ... " />
-            <marker date="1561343963897" expanded="true" signature="614:662" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="668:774" ph="/// simply spins the pickup a specified amount, in degrees per second ... " />
-            <marker date="1561343963897" expanded="true" signature="826:909" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="915:1042" ph="/// when the player enters the trigger for this object, it calls the virtual pickup method ... " />
-            <marker date="1561343963897" expanded="true" signature="1090:1228" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="1172:1222" ph="{...}" />
-            <marker date="1561343963897" expanded="true" signature="1234:1424" ph="/// sets the basic functionality for pickups, destroys them and says its time to respawn. ... " />
-            <marker date="1561343963897" expanded="true" signature="1475:1593" ph="{...}" />
+            <marker date="1561922634308" expanded="true" signature="80:195" ph="{...}" />
+            <marker date="1561922634308" expanded="true" signature="202:487" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
+            <marker date="1561922634308" expanded="true" signature="523:1006" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1880">
+          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+          <folding>
+            <marker date="1562025885305" expanded="true" signature="6:44" ph="..." />
+            <marker date="1562025885305" expanded="true" signature="91:3425" ph="{...}" />
+            <marker date="1562025885305" expanded="true" signature="711:913" ph="[...]" />
+            <marker date="1562025885305" expanded="true" signature="1344:1424" ph="{...}" />
+            <marker date="1562025885305" expanded="true" signature="2257:2354" ph="/// abstract method that must be overridden in child classes ... " />
+            <marker date="1562025885305" expanded="true" signature="2397:2578" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
+            <marker date="1562025885305" expanded="true" signature="2611:2754" ph="{...}" />
+            <marker date="1562025885305" expanded="true" signature="2760:2882" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
+            <marker date="1562025885305" expanded="true" signature="2913:3131" ph="{...}" />
+            <marker date="1562025885305" expanded="true" signature="3005:3046" ph="{...}" />
+            <marker date="1562025885305" expanded="true" signature="3078:3125" ph="{...}" />
+            <marker date="1562025885305" expanded="true" signature="3137:3347" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
+            <marker date="1562025885305" expanded="true" signature="3377:3423" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <marker date="1562016857500" expanded="true" signature="176:1582" ph="{...}" />
+            <marker date="1562016857500" expanded="true" signature="485:642" ph="{...}" />
+            <marker date="1562016857500" expanded="true" signature="648:878" ph="/// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands ... " />
+            <marker date="1562016857500" expanded="true" signature="933:1164" ph="{...}" />
+            <marker date="1562016857500" expanded="true" signature="1170:1365" ph="/// When a new weapon is picked up we need to get rid of the old one, to this destroys the current weapon and ... " />
+            <marker date="1562016857500" expanded="true" signature="1397:1580" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1561345309566" expanded="true" signature="54:518" ph="{...}" />
+            <marker date="1561345309566" expanded="true" signature="163:353" ph="/// overrides the OnPickUp method of the pickup class and tells the player to unequip the current weapon and ... " />
+            <marker date="1561345309566" expanded="true" signature="405:516" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <marker date="1561922634306" expanded="true" signature="56:1317" ph="{...}" />
+            <marker date="1561922634306" expanded="true" signature="219:334" ph="{...}" />
+            <marker date="1561922634306" expanded="true" signature="341:702" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
+            <marker date="1561922634306" expanded="true" signature="738:1315" ph="{...}" />
+            <marker date="1561922634306" expanded="true" signature="793:1244" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-771">
+        <state relative-caret-position="40">
           <caret line="2" column="69" selection-start-line="2" selection-start-column="69" selection-end-line="2" selection-end-column="69" />
           <folding>
             <marker date="1562025414098" expanded="true" signature="132:2849" ph="{...}" />
@@ -765,7 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
+        <state relative-caret-position="560">
           <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding>
             <marker date="1562025525529" expanded="true" signature="6:92" ph="..." />
@@ -785,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="400">
           <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <marker date="1561344425636" expanded="true" signature="6:44" ph="..." />
@@ -798,29 +849,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="1040">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
-            <marker date="1561922634308" expanded="true" signature="53:1008" ph="{...}" />
-            <marker date="1561922634308" expanded="true" signature="80:195" ph="{...}" />
-            <marker date="1561922634308" expanded="true" signature="202:487" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-            <marker date="1561922634308" expanded="true" signature="523:1006" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <marker date="1561922634306" expanded="true" signature="56:1317" ph="{...}" />
-            <marker date="1561922634306" expanded="true" signature="219:334" ph="{...}" />
-            <marker date="1561922634306" expanded="true" signature="341:702" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-            <marker date="1561922634306" expanded="true" signature="738:1315" ph="{...}" />
-            <marker date="1561922634306" expanded="true" signature="793:1244" ph="{...}" />
+            <marker date="1562025856725" expanded="true" signature="6:92" ph="..." />
+            <marker date="1562025856725" expanded="true" signature="137:2418" ph="{...}" />
+            <marker date="1562025856725" expanded="true" signature="144:311" ph="[...]" />
+            <marker date="1562025856725" expanded="true" signature="937:1156" ph="/// Called from the Player Class, this sets the timescale to be slowed down and speeds up the animator so the ... " />
+            <marker date="1562025856725" expanded="true" signature="1234:1822" ph="{...}" />
+            <marker date="1562025856725" expanded="true" signature="1849:1916" ph="{...}" />
+            <marker date="1562025856725" expanded="true" signature="1923:2043" ph="/// Converts time back to realtime and slows the animator back down to normal speed ... " />
+            <marker date="1562025856725" expanded="true" signature="2077:2416" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -839,68 +880,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/WeightedObjectDrawer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="101" column="19" selection-start-line="101" selection-start-column="19" selection-end-line="101" selection-end-column="19" />
+        <state relative-caret-position="420">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
-            <marker date="1562025885305" expanded="true" signature="6:44" ph="..." />
-            <marker date="1562025885305" expanded="true" signature="91:3425" ph="{...}" />
-            <marker date="1562025885305" expanded="true" signature="711:913" ph="[...]" />
-            <marker date="1562025885305" expanded="true" signature="1344:1424" ph="{...}" />
-            <marker date="1562025885305" expanded="true" signature="2257:2354" ph="/// abstract method that must be overridden in child classes ... " />
-            <marker date="1562025885305" expanded="true" signature="2397:2578" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
-            <marker date="1562025885305" expanded="true" signature="2611:2754" ph="{...}" />
-            <marker date="1562025885305" expanded="true" signature="2760:2882" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
-            <marker date="1562025885305" expanded="true" signature="2913:3131" ph="{...}" />
-            <marker date="1562025885305" expanded="true" signature="3005:3046" ph="{...}" />
-            <marker date="1562025885305" expanded="true" signature="3078:3125" ph="{...}" />
-            <marker date="1562025885305" expanded="true" signature="3137:3347" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
-            <marker date="1562025885305" expanded="true" signature="3377:3423" ph="{...}" />
+            <marker date="1562538930139" expanded="false" signature="6:97" ph="..." />
+            <marker date="1562538930139" expanded="true" signature="213:1042" ph="{...}" />
+            <marker date="1562538930139" expanded="true" signature="308:1040" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Pickup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="980">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        <state relative-caret-position="1180">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
           <folding>
-            <marker date="1562016857500" expanded="true" signature="176:1582" ph="{...}" />
-            <marker date="1562016857500" expanded="true" signature="485:642" ph="{...}" />
-            <marker date="1562016857500" expanded="true" signature="648:878" ph="/// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands ... " />
-            <marker date="1562016857500" expanded="true" signature="933:1164" ph="{...}" />
-            <marker date="1562016857500" expanded="true" signature="1170:1365" ph="/// When a new weapon is picked up we need to get rid of the old one, to this destroys the current weapon and ... " />
-            <marker date="1562016857500" expanded="true" signature="1397:1580" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="64:1647" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="341:378" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="405:454" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="460:578" ph="/// counts down the lifespan of the gameobject using the delayed destroy overload ... " />
+            <marker date="1562541833022" expanded="true" signature="614:662" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="668:774" ph="/// simply spins the pickup a specified amount, in degrees per second ... " />
+            <marker date="1562541833022" expanded="true" signature="826:909" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="915:1042" ph="/// when the player enters the trigger for this object, it calls the virtual pickup method ... " />
+            <marker date="1562541833022" expanded="true" signature="1090:1228" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="1172:1222" ph="{...}" />
+            <marker date="1562541833022" expanded="true" signature="1234:1424" ph="/// sets the basic functionality for pickups, destroys them and says its time to respawn. ... " />
+            <marker date="1562541833022" expanded="true" signature="1475:1645" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="589">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
-            <marker date="1561345309566" expanded="true" signature="54:518" ph="{...}" />
-            <marker date="1561345309566" expanded="true" signature="163:353" ph="/// overrides the OnPickUp method of the pickup class and tells the player to unequip the current weapon and ... " />
-            <marker date="1561345309566" expanded="true" signature="405:516" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-          <folding>
-            <marker date="1562025856725" expanded="true" signature="6:92" ph="..." />
-            <marker date="1562025856725" expanded="true" signature="137:2418" ph="{...}" />
-            <marker date="1562025856725" expanded="true" signature="144:311" ph="[...]" />
-            <marker date="1562025856725" expanded="true" signature="937:1156" ph="/// Called from the Player Class, this sets the timescale to be slowed down and speeds up the animator so the ... " />
-            <marker date="1562025856725" expanded="true" signature="1234:1822" ph="{...}" />
-            <marker date="1562025856725" expanded="true" signature="1849:1916" ph="{...}" />
-            <marker date="1562025856725" expanded="true" signature="1923:2043" ph="/// Converts time back to realtime and slows the animator back down to normal speed ... " />
-            <marker date="1562025856725" expanded="true" signature="2077:2416" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="6:146" ph="..." />
+            <marker date="1562542134220" expanded="true" signature="193:2155" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="531:740" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="746:1139" ph="[...]" />
+            <marker date="1562542134220" expanded="true" signature="1244:1516" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="1384:1510" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="1546:1756" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="1782:1818" ph="{...}" />
+            <marker date="1562542134220" expanded="true" signature="1846:2153" ph="{...}" />
           </folding>
         </state>
       </provider>
