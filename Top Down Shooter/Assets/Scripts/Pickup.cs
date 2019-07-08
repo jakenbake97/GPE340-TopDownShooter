@@ -15,6 +15,7 @@ public abstract class Pickup : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Paused) return;
         RotatePickup(rotationSpeed);
     }
 

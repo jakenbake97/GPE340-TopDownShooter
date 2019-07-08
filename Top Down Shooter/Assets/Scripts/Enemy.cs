@@ -31,6 +31,7 @@ public class Enemy : WeaponAgent
     // Update is called once per frame
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (!UpdateAgentForTarget()) return;
 
         DetermineShoot();

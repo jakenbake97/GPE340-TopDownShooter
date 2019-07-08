@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.InteropServices.WindowsRuntime;
+using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.Paused) return;
         targetPosition = GameManager.Player.transform;
         AdjustCameraPosition();
     }

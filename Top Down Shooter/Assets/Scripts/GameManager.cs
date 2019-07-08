@@ -16,12 +16,19 @@ public class GameManager : MonoBehaviour
     [SerializeField, Tooltip("The amount of time it takes before the player is re-spawned")]
     private float playerRespawnDelay = 3f;
 
+    [SerializeField] private int initialLives = 3;
+
+    public int Lives { get; private set; }
+
     public static Player Player { get; private set; }
-    private int debugNumber = 0;
+
+    public static bool Paused = false;
+    private static float originalTimeScale;
 
     private void Awake()
     {
         Instance = this;
+        Lives = initialLives;
         SpawnPlayer();
     }
 
@@ -29,16 +36,35 @@ public class GameManager : MonoBehaviour
     private void SpawnPlayer()
     {
         var temp = Instantiate(playerPrefab, playerSpawnPoint.position, playerSpawnPoint.rotation);
-        temp.name = $"Player{debugNumber}";
         Player = temp.GetComponent<Player>();
 
         Player.Health.onDie.AddListener(HandlePlayerDeath);
-        debugNumber++;
     }
 
     private void HandlePlayerDeath()
     {
         Player.Health.onDie.RemoveListener(HandlePlayerDeath);
-        Invoke(nameof(SpawnPlayer), playerRespawnDelay);
+        if (Lives > 0)
+        {
+            Invoke(nameof(SpawnPlayer), playerRespawnDelay);
+            Lives--;
+        }
+        else
+        {
+            // Game Over!   
+        }
+    }
+
+    public static void Pause()
+    {
+        Paused = true;
+        originalTimeScale = Time.timeScale;
+        Time.timeScale = 0f;
+    }
+
+    public static void UnPause()
+    {
+        Paused = false;
+        Time.timeScale = originalTimeScale;
     }
 }

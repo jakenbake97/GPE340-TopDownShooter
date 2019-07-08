@@ -30,10 +30,29 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
+        if (PauseGameInput()) return;
+
         AxisInput();
         MouseInputPlaneCast();
         MouseClickInput();
         MiscKeyInput();
+    }
+
+    private static bool PauseGameInput()
+    {
+        if (GameManager.Paused)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                GameManager.UnPause();
+            }
+
+            return true;
+        }
+
+        if (!Input.GetKeyDown(KeyCode.Escape)) return false;
+        GameManager.Pause();
+        return true;
     }
 
     /// <summary>

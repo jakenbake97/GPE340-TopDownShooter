@@ -38,12 +38,13 @@ public class TimeController : MonoBehaviour
         characterAnimationController.anim.speed = timeMultiplier;
         originalFixedTime = Time.fixedDeltaTime;
         Time.fixedDeltaTime = Time.timeScale * 0.02f;
-        exitTime = Time.unscaledTime + slowDownLength;
+        exitTime = Time.time + (slowDownLength * slowDownFactor);
         slowMo = true;
     }
 
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (!slowMo) return;
         ResumeRealTime();
     }
@@ -54,7 +55,7 @@ public class TimeController : MonoBehaviour
     /// </summary>
     private void ResumeRealTime()
     {
-        if (!(exitTime <= Time.unscaledTime)) return;
+        if (!(exitTime <= Time.time)) return;
         Time.timeScale = 1;
         characterAnimationController.anim.speed = 1f;
         characterAnimationController.rotationSpeed = originalRotation;

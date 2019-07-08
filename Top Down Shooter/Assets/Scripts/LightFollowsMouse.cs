@@ -17,6 +17,7 @@ public class LightFollowsMouse : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (!GameManager.Player.InputManager.mousePointLight)
         {
             GameManager.Player.InputManager.mousePointLight = this;

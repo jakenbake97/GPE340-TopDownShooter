@@ -17,6 +17,7 @@ public class LaserSight : MonoBehaviour
     /// </summary>
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (weaponRef.Equipped)
         {
             line.enabled = true;
