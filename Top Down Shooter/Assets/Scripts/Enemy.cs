@@ -51,6 +51,7 @@ public class Enemy : WeaponAgent
             return false;
         }
 
+        agent.isStopped = false;
         agent.SetDestination(GameManager.Player.transform.position);
         desiredVelocity = agent.desiredVelocity;
         Vector3 input = transform.InverseTransformDirection(desiredVelocity);
