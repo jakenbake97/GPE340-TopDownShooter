@@ -1371,6 +1371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attachmentPoint: {fileID: 5517756340664978211}
+  target: {fileID: 0}
   weaponPrefabs:
   - {fileID: 6975493877465643304, guid: 56c21afd47a746f4baafc55300862d4d, type: 3}
   - {fileID: 1746760181074402851, guid: 4499a3dab96dcb74f9ad2fa406513bb2, type: 3}
@@ -1390,7 +1391,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 4
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -1506,6 +1507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f061eeeaa29bc5b46b7d8bfbf9b6c258, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemDropOffset: 0.75
+  itemDropChance: 55.5
   itemDrops:
   - item: {fileID: 4210198505625478768, guid: fe223fe617c639e47906e6a02bebd41f, type: 3}
     weight: 10
@@ -1517,8 +1520,6 @@ MonoBehaviour:
     weight: 3
   - item: {fileID: 5609537220123227310, guid: 42defd62ff7d98642a5da1978238af29, type: 3}
     weight: 1
-  itemDropOffset: 0.75
-  itemDropChance: 55.5
 --- !u!1 &4929895099137662986
 GameObject:
   m_ObjectHideFlags: 0

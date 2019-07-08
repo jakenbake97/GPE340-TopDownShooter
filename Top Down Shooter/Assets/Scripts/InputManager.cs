@@ -2,8 +2,7 @@
 
 public class InputManager : MonoBehaviour
 {
-    [SerializeField, Tooltip("A light to be placed on the cursor to make it easier to see")]
-    private LightFollowsMouse mousePointLight;
+    [HideInInspector] public LightFollowsMouse mousePointLight;
 
     private CharacterAnimationController characterAnimations;
 
@@ -31,10 +30,29 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
+        if (PauseGameInput()) return;
+
         AxisInput();
         MouseInputPlaneCast();
         MouseClickInput();
         MiscKeyInput();
+    }
+
+    private static bool PauseGameInput()
+    {
+        if (GameManager.Paused)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                GameManager.UnPause();
+            }
+
+            return true;
+        }
+
+        if (!Input.GetKeyDown(KeyCode.Escape)) return false;
+        GameManager.Pause();
+        return true;
     }
 
     /// <summary>
@@ -93,6 +111,6 @@ public class InputManager : MonoBehaviour
         if (!plane.Raycast(ray, out var distance)) return;
         var point = ray.GetPoint(distance);
         characterAnimations.RotateTowardsPoint(point);
-        mousePointLight.LightMovesToPoint(point);
+        mousePointLight?.LightMovesToPoint(point);
     }
 }

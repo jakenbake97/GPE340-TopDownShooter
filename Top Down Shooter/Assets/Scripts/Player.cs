@@ -3,10 +3,10 @@
 [RequireComponent(typeof(CharacterAnimationController), typeof(InputManager))]
 public class Player : WeaponAgent
 {
-    private CharacterAnimationController charAnimController;
-
     [Header("Weapon Settings"), SerializeField, Tooltip("The prefab for the default weapon to be equipped")]
     private GameObject weaponPrefab;
+
+    private CharacterAnimationController charAnimController;
 
     [HideInInspector] public bool mouseDown = false;
 
@@ -14,10 +14,12 @@ public class Player : WeaponAgent
 
     [HideInInspector] public bool reloadInput = false;
     [HideInInspector] public bool slowMoInput = false;
+    public InputManager InputManager { get; private set; }
     private TimeController timeController;
 
     public override void Awake()
     {
+        InputManager = GetComponent<InputManager>();
         charAnimController = GetComponent<CharacterAnimationController>();
         EquipWeapon(weaponPrefab);
         timeController = GetComponent<TimeController>();
@@ -26,6 +28,7 @@ public class Player : WeaponAgent
 
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (slowMoInput)
         {
             timeController.DoSlowMotion(charAnimController);

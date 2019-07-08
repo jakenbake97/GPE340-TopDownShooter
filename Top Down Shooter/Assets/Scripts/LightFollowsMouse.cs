@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class LightFollowsMouse : MonoBehaviour
 {
@@ -12,5 +13,14 @@ public class LightFollowsMouse : MonoBehaviour
     public void LightMovesToPoint(Vector3 targetPoint)
     {
         transform.position = new Vector3(targetPoint.x, targetPoint.y + lightHeight, targetPoint.z);
+    }
+
+    private void Update()
+    {
+        if (GameManager.Paused) return;
+        if (!GameManager.Player.InputManager.mousePointLight)
+        {
+            GameManager.Player.InputManager.mousePointLight = this;
+        }
     }
 }

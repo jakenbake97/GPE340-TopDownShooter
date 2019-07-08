@@ -45,6 +45,7 @@ public class Health : MonoBehaviour
         onDamage.Invoke();
         if (!(HealthValue <= 0f)) return;
         onDie.Invoke();
+        Destroy(gameObject, 5f);
     }
 
     /// <summary>

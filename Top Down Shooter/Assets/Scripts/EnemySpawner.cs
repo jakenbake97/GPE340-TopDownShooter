@@ -35,6 +35,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (numberSpawned >= enemyCount)
         {
             CancelInvoke(nameof(SpawnEnemy));

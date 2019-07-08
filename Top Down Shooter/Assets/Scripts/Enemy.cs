@@ -1,4 +1,5 @@
 ﻿using System;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -7,9 +8,8 @@ using Random = UnityEngine.Random;
 public class Enemy : WeaponAgent
 {
     private NavMeshAgent agent;
+    public Player target;
 
-
-    private Player target;
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
     private Vector3 desiredVelocity;
@@ -31,6 +31,7 @@ public class Enemy : WeaponAgent
     // Update is called once per frame
     private void Update()
     {
+        if (GameManager.Paused) return;
         if (!UpdateAgentForTarget()) return;
 
         DetermineShoot();
@@ -42,9 +43,8 @@ public class Enemy : WeaponAgent
     /// </summary>
     private bool UpdateAgentForTarget()
     {
-        target = FindObjectOfType<Player>();
-
-        if (!target || target.Health.HealthValue <= 0f)
+        target = GameManager.Player;
+        if (!GameManager.Player || GameManager.Player.Health.HealthValue <= 0f)
         {
             agent.isStopped = true;
             anim.SetFloat(Horizontal, 0f);
@@ -52,7 +52,8 @@ public class Enemy : WeaponAgent
             return false;
         }
 
-        agent.SetDestination(target.transform.position);
+        agent.isStopped = false;
+        agent.SetDestination(GameManager.Player.transform.position);
         desiredVelocity = agent.desiredVelocity;
         Vector3 input = transform.InverseTransformDirection(desiredVelocity);
         anim.SetFloat(Horizontal, input.x);
@@ -66,8 +67,10 @@ public class Enemy : WeaponAgent
     /// </summary>
     private void DetermineShoot()
     {
-        if (!(Vector3.Angle(transform.forward, target.transform.position) <= currentWeapon.attackAngle)) return;
-        if (Vector3.SqrMagnitude(transform.position - target.transform.position) <=
+        var angle = Vector3.Angle(transform.forward, GameManager.Player.transform.position);
+        if (!(angle <=
+              currentWeapon.attackAngle)) return;
+        if (Vector3.SqrMagnitude(transform.position - GameManager.Player.transform.position) <=
             currentWeapon.maxRange * currentWeapon.maxRange)
         {
             currentWeapon.processShoot();
@@ -80,5 +83,66 @@ public class Enemy : WeaponAgent
     private void OnAnimatorMove()
     {
         agent.velocity = anim.velocity;
+    }
+
+    private void OnAnimatorIK(int layerIndex)
+    {
+        if (!equippedWeapon || !currentWeapon) return;
+        SetCharacterIKAnimation(currentWeapon.rightHandIKTarget, currentWeapon.leftHandIKTarget,
+            currentWeapon.rightElbowIKHint, currentWeapon.leftElbowIKHint);
+    }
+
+    /// <summary>
+    /// Optionally takes 4 parameters for setting the IK targets and hints. Each target is then given a weight of 1 to
+    /// follow the IK points as best as possible
+    /// </summary>
+    private void SetCharacterIKAnimation([CanBeNull] Transform rightHandTarget, [CanBeNull] Transform leftHandTarget,
+                                         [CanBeNull] Transform rightElbowHint, [CanBeNull] Transform leftElbowHint)
+    {
+        if (rightHandTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.RightHand, rightHandTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.RightHand, rightHandTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 0f);
+        }
+
+        if (leftHandTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.LeftHand, leftHandTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.LeftHand, leftHandTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 0f);
+        }
+
+        if (rightElbowHint)
+        {
+            anim.SetIKHintPosition(AvatarIKHint.RightElbow, rightElbowHint.position);
+            anim.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 1f);
+        }
+        else
+        {
+            anim.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 0f);
+        }
+
+        if (leftElbowHint)
+        {
+            anim.SetIKHintPosition(AvatarIKHint.LeftElbow, leftElbowHint.position);
+            anim.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 1f);
+        }
+        else
+        {
+            anim.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 0f);
+        }
     }
 }

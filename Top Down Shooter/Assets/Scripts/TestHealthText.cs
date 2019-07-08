@@ -4,9 +4,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class TestHealthText : MonoBehaviour
 {
-    [Tooltip("The player's health component")]
-    public Health health;
-
     private Text text;
 
     private void Awake()
@@ -20,6 +17,6 @@ public class TestHealthText : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        text.text = $"Health: {Mathf.RoundToInt(health.HealthPercent * 100f)}%";
+        text.text = $"Health: {Mathf.RoundToInt(GameManager.Player.Health.HealthPercent * 100f)}%";
     }
 }
