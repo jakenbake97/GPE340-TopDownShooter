@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RespawnStationary : MonoBehaviour
 {
@@ -27,5 +29,10 @@ public class RespawnStationary : MonoBehaviour
     public void EventRespawn()
     {
         StartCoroutine(Respawn());
+    }
+
+    private void Awake()
+    {
+        EventRespawn();
     }
 }

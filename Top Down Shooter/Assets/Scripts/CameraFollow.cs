@@ -2,7 +2,7 @@
 
 public class CameraFollow : MonoBehaviour
 {
-    [SerializeField, Tooltip("The target the camera should follow")]
+//    [SerializeField, Tooltip("The target the camera should follow")]
     private Transform targetPosition;
 
     [SerializeField, Tooltip("The height at which the camera should be placed above the target")]
@@ -14,6 +14,7 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
+        targetPosition = GameManager.Player.transform;
         AdjustCameraPosition();
     }
 
