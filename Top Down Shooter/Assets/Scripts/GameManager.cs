@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
@@ -17,19 +14,25 @@ public class GameManager : MonoBehaviour
     [SerializeField, Tooltip("The amount of time it takes before the player is re-spawned")]
     private float playerRespawnDelay = 3f;
 
-    [SerializeField] private int initialLives = 3;
+    [SerializeField, Tooltip("The number of lives the player starts with")]
+    private int initialLives = 3;
 
-    [SerializeField] private EnemySpawner spawner;
+    [SerializeField, Tooltip("Reference to the spawner in the scene")]
+    private EnemySpawner spawner;
 
     [HideInInspector] public int enemiesLeft;
 
-    [SerializeField] private UnityEvent onPause;
+    [SerializeField, Tooltip("invoked when the game is paused")]
+    private UnityEvent onPause;
 
-    [SerializeField] private UnityEvent onResume;
+    [SerializeField, Tooltip("Invoked when the game resumes from pause")]
+    private UnityEvent onResume;
 
-    [SerializeField] private UnityEvent onLose;
+    [SerializeField, Tooltip("Invoked when the player dies and is out of lives")]
+    private UnityEvent onLose;
 
-    [SerializeField] private UnityEvent onWin;
+    [SerializeField, Tooltip("Invoked when there are no enemies left")]
+    private UnityEvent onWin;
 
     public static int Lives { get; private set; }
 
@@ -51,6 +54,9 @@ public class GameManager : MonoBehaviour
         HandleWin();
     }
 
+    /// <summary>
+    /// Determines if the player has won. if so, invokes the onWin event
+    /// </summary>
     private void HandleWin()
     {
         if (enemiesLeft > 0) return;
@@ -58,6 +64,9 @@ public class GameManager : MonoBehaviour
     }
 
 
+    /// <summary>
+    /// Instantiates the player and adds a listener for their death
+    /// </summary>
     private void SpawnPlayer()
     {
         var temp = Instantiate(playerPrefab, playerSpawnPoint.position, playerSpawnPoint.rotation);
@@ -66,6 +75,10 @@ public class GameManager : MonoBehaviour
         Player.Health.onDie.AddListener(HandlePlayerDeath);
     }
 
+    /// <summary>
+    /// Called from the onDie event on player.Health. This removes the listener and subtracts lives determining
+    /// if the game should switch to a game over state of respawn the player
+    /// </summary>
     private void HandlePlayerDeath()
     {
         Player.Health.onDie.RemoveListener(HandlePlayerDeath);
@@ -80,6 +93,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Called from inputManager when the pause key is pressed. Sets bool pause to true, stops timescale,
+    /// and invokes the onPause event
+    /// </summary>
     public static void Pause()
     {
         Paused = true;
@@ -88,6 +105,10 @@ public class GameManager : MonoBehaviour
         Instance.onPause.Invoke();
     }
 
+    /// <summary>
+    /// Called from either a ui button click or the press of the pause key when the game is in a pause state.
+    /// Sets bool pause to false, reverts timescale, and invokes onResume function
+    /// </summary>
     public static void Resume()
     {
         Paused = false;

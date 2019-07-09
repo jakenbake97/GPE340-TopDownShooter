@@ -18,15 +18,12 @@ public class LaserSight : MonoBehaviour
     private void Update()
     {
         if (GameManager.Paused) return;
-        if (weaponRef.Equipped)
+        if (!weaponRef.Equipped) return;
+        line.enabled = true;
+        line.SetPosition(0, weaponRef.barrel.position);
+        if (Physics.Raycast(weaponRef.barrel.position, transform.forward, out var hit, Mathf.Infinity))
         {
-            line.enabled = true;
-            line.SetPosition(0, weaponRef.barrel.position);
-            RaycastHit hit;
-            if (Physics.Raycast(weaponRef.barrel.position, transform.forward, out hit, Mathf.Infinity))
-            {
-                line.SetPosition(1, hit.point);
-            }
+            line.SetPosition(1, hit.point);
         }
     }
 }

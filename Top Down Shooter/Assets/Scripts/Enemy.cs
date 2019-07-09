@@ -1,5 +1,4 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -8,12 +7,12 @@ using Random = UnityEngine.Random;
 public class Enemy : WeaponAgent
 {
     private NavMeshAgent agent;
-    public Player target;
-
     private static readonly int Horizontal = Animator.StringToHash("Horizontal");
     private static readonly int Vertical = Animator.StringToHash("Vertical");
     private Vector3 desiredVelocity;
-    [SerializeField] private GameObject[] weaponPrefabs;
+
+    [SerializeField, Tooltip("An array of all weapons the enemy can possibly spawn with")]
+    private GameObject[] weaponPrefabs;
 
 
     public override void Awake()
@@ -44,7 +43,6 @@ public class Enemy : WeaponAgent
     /// </summary>
     private bool UpdateAgentForTarget()
     {
-        target = GameManager.Player;
         if (!GameManager.Player || GameManager.Player.Health.HealthValue <= 0f)
         {
             agent.isStopped = true;
@@ -86,6 +84,9 @@ public class Enemy : WeaponAgent
         agent.velocity = anim.velocity;
     }
 
+    /// <summary>
+    /// Called when the animator does an IK pass and passes the current weapons ik targets to SetCharacterIKAnimation
+    /// </summary>
     private void OnAnimatorIK(int layerIndex)
     {
         if (!equippedWeapon || !currentWeapon) return;

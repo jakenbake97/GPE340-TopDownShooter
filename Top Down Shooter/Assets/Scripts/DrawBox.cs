@@ -2,8 +2,11 @@
 
 public class DrawBox : MonoBehaviour
 {
-    public Vector3 scale;
-    public Color boxColor;
+    [SerializeField, Tooltip("The size of the gizmo box drawn")]
+    private Vector3 scale;
+
+    [SerializeField, Tooltip("The color of the box and line drawn")]
+    private Color boxColor;
 
     /// <summary>
     /// Draws a box to show where an enemy will spawn

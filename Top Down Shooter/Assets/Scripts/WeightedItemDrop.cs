@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -13,7 +11,7 @@ public class WeightedItemDrop : MonoBehaviour
     [SerializeField, Tooltip("The percent chance that an item will drop"), Range(0f, 100f)]
     private float itemDropChance = 50f;
 
-    [System.Serializable]
+    [Serializable]
     public struct WeightedObject
     {
         [Tooltip("The object that will be dropped if selected")]
@@ -32,7 +30,9 @@ public class WeightedItemDrop : MonoBehaviour
 
     private float[] cdfArray;
 
-
+    /// <summary>
+    /// This loads the CDF array with weights from the weightedObject array.weight
+    /// </summary>
     private void seedCDFArray()
     {
         cdfArray = new float[itemDrops.Length];
@@ -44,6 +44,9 @@ public class WeightedItemDrop : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Chooses a random item from the array based off of weights
+    /// </summary>
     private int selectItem()
     {
         int selectedIndex = Array.BinarySearch(cdfArray, Random.Range(0f, cdfArray.Last()));
@@ -57,6 +60,9 @@ public class WeightedItemDrop : MonoBehaviour
         seedCDFArray();
     }
 
+    /// <summary>
+    /// Determines if an item should be dropped or not on enemy death
+    /// </summary>
     public void DropItem()
     {
         if (!(Random.Range(0f, 100f) < itemDropChance)) return;

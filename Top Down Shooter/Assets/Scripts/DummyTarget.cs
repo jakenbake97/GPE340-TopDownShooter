@@ -1,11 +1,14 @@
-﻿using System;
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 using UnityEngine;
 
 public class DummyTarget : MonoBehaviour
 {
-    [SerializeField] private GameObject weapon;
-    [SerializeField] private Transform weaponSpawnPoint;
+    [SerializeField, Tooltip("The weapon the dummy will spawn with")]
+    private GameObject weapon;
+
+    [SerializeField, Tooltip("The position the weapon should spawn at")]
+    private Transform weaponSpawnPoint;
+
     private Weapon currentWeapon;
     private Animator anim;
 
@@ -17,6 +20,10 @@ public class DummyTarget : MonoBehaviour
         currentWeapon = spawnedWeapon.GetComponent<Weapon>();
     }
 
+    /// <summary>
+    /// Event called when the animator does an IK pass. If there is a currentWeapon, send its IK targets to the
+    /// SetCharacterIKAnimation method
+    /// </summary>
     private void OnAnimatorIK(int layerIndex)
     {
         if (!currentWeapon) return;

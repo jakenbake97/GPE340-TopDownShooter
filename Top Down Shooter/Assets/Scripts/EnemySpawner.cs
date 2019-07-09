@@ -3,10 +3,17 @@ using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject[] enemyUnits;
+    [SerializeField, Tooltip("array of enemy prefabs to spawn from")]
+    private GameObject[] enemyUnits;
+
     public int enemyCount;
-    [SerializeField] private int maxActiveEnemies;
-    [SerializeField] private float spawnDelay;
+
+    [SerializeField, Tooltip("The maximum number of enemies that can be alive at one time")]
+    private int maxActiveEnemies;
+
+    [SerializeField, Tooltip("The amount of time in seconds to wait before spawning the next enemy")]
+    private float spawnDelay;
+
     private int currentActiveEnemies;
     private int numberSpawned = 0;
 

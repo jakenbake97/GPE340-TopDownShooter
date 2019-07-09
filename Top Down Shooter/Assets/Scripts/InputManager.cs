@@ -38,6 +38,9 @@ public class InputManager : MonoBehaviour
         MiscKeyInput();
     }
 
+    /// <summary>
+    /// Checks for pause keyboard input and calls the appropriate GameManager function
+    /// </summary>
     private static bool PauseGameInput()
     {
         if (GameManager.Paused)
