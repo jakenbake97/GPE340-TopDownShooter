@@ -1,37 +1,80 @@
-﻿using UnityEngine;
+﻿using System;
+using JetBrains.Annotations;
+using UnityEngine;
 
 public class DummyTarget : MonoBehaviour
 {
-    private Transform bulletParent;
+    [SerializeField] private GameObject weapon;
+    [SerializeField] private Transform weaponSpawnPoint;
+    private Weapon currentWeapon;
+    private Animator anim;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+        var spawnedWeapon = Instantiate(weapon, weaponSpawnPoint.position, Quaternion.identity);
+        spawnedWeapon.transform.SetParent(weaponSpawnPoint, true);
+        currentWeapon = spawnedWeapon.GetComponent<Weapon>();
+    }
+
+    private void OnAnimatorIK(int layerIndex)
+    {
+        if (!currentWeapon) return;
+        SetCharacterIKAnimation(currentWeapon.rightHandIKTarget, currentWeapon.leftHandIKTarget,
+            currentWeapon.rightElbowIKHint, currentWeapon.leftElbowIKHint);
+    }
 
     /// <summary>
-    /// on collision, checks to see if the other object was a bullet and if so gets a reference to the
-    /// Transform in the origin field
+    /// Optionally takes 4 parameters for setting the IK targets and hints. Each target is then given a weight of 1 to
+    /// follow the IK points as best as possible
     /// </summary>
-    private void OnCollisionEnter(Collision other)
+    private void SetCharacterIKAnimation([CanBeNull] Transform rightHandTarget, [CanBeNull] Transform leftHandTarget,
+                                         [CanBeNull] Transform rightElbowHint, [CanBeNull] Transform leftElbowHint)
     {
-        var bullet = other.gameObject.GetComponent<Bullet>();
-        if (bullet)
+        if (rightHandTarget)
         {
-            bulletParent = bullet.origin;
+            anim.SetIKPosition(AvatarIKGoal.RightHand, rightHandTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.RightHand, rightHandTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
         }
-    }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 0f);
+        }
 
-    /// <summary>
-    /// Called from the "onDamage" event by the health script on the target, takes the transform from the bullet and
-    /// rotates the GameObject to face it, used just as a simple way to show that the bullet hit the target
-    /// </summary>
-    public void LookAtShooter()
-    {
-        transform.LookAt(bulletParent);
-    }
+        if (leftHandTarget)
+        {
+            anim.SetIKPosition(AvatarIKGoal.LeftHand, leftHandTarget.position);
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+            anim.SetIKRotation(AvatarIKGoal.LeftHand, leftHandTarget.rotation);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
+        }
+        else
+        {
+            anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 0f);
+            anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 0f);
+        }
 
-    /// <summary>
-    /// Called from the "onDie" event on the health script of the target, this calls the EventRespawn method of the
-    /// spawner.
-    /// </summary>
-    public void ParentEventRespawn()
-    {
-        GetComponentInParent<RespawnStationary>().EventRespawn();
+        if (rightElbowHint)
+        {
+            anim.SetIKHintPosition(AvatarIKHint.RightElbow, rightElbowHint.position);
+            anim.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 1f);
+        }
+        else
+        {
+            anim.SetIKHintPositionWeight(AvatarIKHint.RightElbow, 0f);
+        }
+
+        if (leftElbowHint)
+        {
+            anim.SetIKHintPosition(AvatarIKHint.LeftElbow, leftElbowHint.position);
+            anim.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 1f);
+        }
+        else
+        {
+            anim.SetIKHintPositionWeight(AvatarIKHint.LeftElbow, 0f);
+        }
     }
 }
