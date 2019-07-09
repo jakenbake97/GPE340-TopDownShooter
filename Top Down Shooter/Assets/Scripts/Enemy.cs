@@ -21,6 +21,7 @@ public class Enemy : WeaponAgent
         agent = GetComponent<NavMeshAgent>();
         base.EquipWeapon(weaponPrefabs[Random.Range(0, weaponPrefabs.Length)]);
         base.Awake();
+        UIManager.Instance.RegisterEnemy(this);
     }
 
     private void Start()

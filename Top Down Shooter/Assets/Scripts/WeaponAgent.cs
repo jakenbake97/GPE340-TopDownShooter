@@ -11,7 +11,7 @@ public class WeaponAgent : MonoBehaviour
 
     protected GameObject equippedWeapon;
 
-    protected Weapon currentWeapon;
+    public Weapon currentWeapon;
 
     [SerializeField, Tooltip("The position the weapon should be spawned")]
     protected Transform attachmentPoint;

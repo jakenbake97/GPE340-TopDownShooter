@@ -280,6 +280,7 @@ MonoBehaviour:
   reloadTime: 3.5
   bulletForce: 120
   spreadAngle: 0
+  Icon: {fileID: 21300000, guid: 6dc8d673ef5f18d468d7eac6e942afd1, type: 3}
   fireOnClickDown: 0
   animationType: 1
   bulletPrefab: {fileID: 6061362939230095205, guid: 6a316bff8be87264bae9edcd1146bd4a,

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,7 +19,13 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int initialLives = 3;
 
-    public int Lives { get; private set; }
+    [SerializeField] private UnityEvent onPause;
+
+    [SerializeField] private UnityEvent onResume;
+
+    [SerializeField] private UnityEvent onLose;
+
+    public static int Lives { get; private set; }
 
     public static Player Player { get; private set; }
 
@@ -51,7 +58,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Game Over!   
+            Instance.onLose.Invoke();
         }
     }
 
@@ -60,11 +67,13 @@ public class GameManager : MonoBehaviour
         Paused = true;
         originalTimeScale = Time.timeScale;
         Time.timeScale = 0f;
+        Instance.onPause.Invoke();
     }
 
-    public static void UnPause()
+    public static void Resume()
     {
         Paused = false;
         Time.timeScale = originalTimeScale;
+        Instance.onResume.Invoke();
     }
 }
