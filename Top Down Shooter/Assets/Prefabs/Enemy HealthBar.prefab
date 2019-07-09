@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4691600984420936039
+--- !u!1 &8558834980371103247
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,52 +8,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8946529679118654917}
-  - component: {fileID: 3931370863331859487}
-  - component: {fileID: 3641725601255904450}
-  - component: {fileID: 1066171118318759577}
+  - component: {fileID: 4666726277661346516}
+  - component: {fileID: 3876954026814136597}
+  - component: {fileID: 2742517923019761018}
+  - component: {fileID: 7422173209447055497}
   m_Layer: 5
-  m_Name: Enemy Health Bar
+  m_Name: Enemy HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8946529679118654917
+--- !u!224 &4666726277661346516
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4691600984420936039}
+  m_GameObject: {fileID: 8558834980371103247}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2696454018700445686}
+  - {fileID: 5236784859314870913}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -133.54, y: -25}
-  m_SizeDelta: {x: 367.08, y: 50}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200.94, y: 21.96}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &3931370863331859487
+--- !u!222 &3876954026814136597
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4691600984420936039}
+  m_GameObject: {fileID: 8558834980371103247}
   m_CullTransparentMesh: 0
---- !u!114 &3641725601255904450
+--- !u!114 &2742517923019761018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4691600984420936039}
+  m_GameObject: {fileID: 8558834980371103247}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: bab1cd3d042a24b478cdb88ee677f88a, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -76,13 +76,13 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1066171118318759577
+--- !u!114 &7422173209447055497
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4691600984420936039}
+  m_GameObject: {fileID: 8558834980371103247}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca305d8cfd1b2f84694bf6f3840b412a, type: 3}
@@ -90,11 +90,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   textFormat: 'Health: {0}%'
-  fill: {fileID: 4537253949494611826}
-  destroyWithTarget: 0
-  trackTarget: 0
+  fill: {fileID: 4883760221742927776}
+  trackTarget: 1
+  destroyWithTarget: 1
   trackingOffset: {x: 0, y: 2, z: 0}
---- !u!1 &6580384153535454441
+--- !u!1 &8637093836118844257
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,9 +102,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2696454018700445686}
-  - component: {fileID: 832067902377147541}
-  - component: {fileID: 4537253949494611826}
+  - component: {fileID: 5236784859314870913}
+  - component: {fileID: 7467468670116310990}
+  - component: {fileID: 4883760221742927776}
   m_Layer: 5
   m_Name: Fill
   m_TagString: Untagged
@@ -112,18 +112,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2696454018700445686
+--- !u!224 &5236784859314870913
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6580384153535454441}
+  m_GameObject: {fileID: 8637093836118844257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8946529679118654917}
+  m_Father: {fileID: 4666726277661346516}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -131,21 +131,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &832067902377147541
+--- !u!222 &7467468670116310990
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6580384153535454441}
+  m_GameObject: {fileID: 8637093836118844257}
   m_CullTransparentMesh: 0
---- !u!114 &4537253949494611826
+--- !u!114 &4883760221742927776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6580384153535454441}
+  m_GameObject: {fileID: 8637093836118844257}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -159,7 +159,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: bab1cd3d042a24b478cdb88ee677f88a, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1

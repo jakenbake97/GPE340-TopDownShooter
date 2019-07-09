@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public abstract class Weapon : MonoBehaviour
@@ -22,6 +23,8 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField, Tooltip("The maximum angle in degrees the bullets can deviate from the center line\n" +
                              "An angle of 10 means 5 degrees on either side of the center line")]
     protected float spreadAngle;
+
+    public Sprite Icon;
 
     [HideInInspector] public bool fireOnClickDown;
 

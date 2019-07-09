@@ -14,6 +14,8 @@ public class HealthBar : MonoBehaviour
 
     [SerializeField] private bool trackTarget;
 
+    [SerializeField] private bool destroyWithTarget;
+
     [SerializeField] private Vector3 trackingOffset;
 
 
@@ -22,13 +24,31 @@ public class HealthBar : MonoBehaviour
     public void SetTarget(Health value)
     {
         target = value;
+        if (destroyWithTarget)
+        {
+            value.onDie.AddListener(HandleTargetDeath);
+        }
     }
-    
+
+    private void HandleTargetDeath()
+    {
+        target.onDie.RemoveListener(HandleTargetDeath);
+        Destroy(gameObject);
+    }
+
 
     private void Update()
     {
         if (!target) return;
-        text.text = string.Format(textFormat, target.HealthValue);
+
+        if (text)
+            text.text = string.Format(textFormat, target.HealthValue);
+
         fill.fillAmount = target.HealthPercent;
+
+        if (trackTarget)
+        {
+            transform.position = target.transform.position + trackingOffset;
+        }
     }
 }
