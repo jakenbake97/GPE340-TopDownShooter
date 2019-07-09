@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject[] enemyUnits;
-    [SerializeField] private int enemyCount;
+    public int enemyCount;
     [SerializeField] private int maxActiveEnemies;
     [SerializeField] private float spawnDelay;
     private int currentActiveEnemies;
@@ -48,5 +48,6 @@ public class EnemySpawner : MonoBehaviour
     private void HandleEnemyDeath()
     {
         currentActiveEnemies--;
+        GameManager.Instance.enemiesLeft--;
     }
 }

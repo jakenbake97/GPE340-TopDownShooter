@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Transform enemyHealthBarContainer;
     [SerializeField] private Image weaponDisplay;
     [SerializeField] private Text livesText;
+    [SerializeField] private Text enemiesLeftText;
     public Camera uICamera;
 
     private void Awake()
@@ -35,6 +36,11 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        if (enemiesLeftText)
+        {
+            enemiesLeftText.text = $"Enemies Left: {GameManager.Instance.enemiesLeft}";
+        }
+
         if (!GameManager.Player) return;
         if (GameManager.Player.currentWeapon)
         {

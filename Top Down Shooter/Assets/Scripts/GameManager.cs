@@ -19,11 +19,17 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int initialLives = 3;
 
+    [SerializeField] private EnemySpawner spawner;
+
+    [HideInInspector] public int enemiesLeft;
+
     [SerializeField] private UnityEvent onPause;
 
     [SerializeField] private UnityEvent onResume;
 
     [SerializeField] private UnityEvent onLose;
+
+    [SerializeField] private UnityEvent onWin;
 
     public static int Lives { get; private set; }
 
@@ -37,6 +43,18 @@ public class GameManager : MonoBehaviour
         Instance = this;
         Lives = initialLives;
         SpawnPlayer();
+        enemiesLeft = spawner.enemyCount;
+    }
+
+    private void Update()
+    {
+        HandleWin();
+    }
+
+    private void HandleWin()
+    {
+        if (enemiesLeft > 0) return;
+        Instance.onWin.Invoke();
     }
 
 

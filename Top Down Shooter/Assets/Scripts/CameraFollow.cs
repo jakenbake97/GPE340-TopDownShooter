@@ -16,6 +16,7 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         if (GameManager.Paused) return;
+        if (!GameManager.Player) return;
         targetPosition = GameManager.Player.transform;
         AdjustCameraPosition();
     }

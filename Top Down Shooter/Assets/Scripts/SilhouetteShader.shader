@@ -1,10 +1,15 @@
 ﻿Shader "Custom/Silhouette" {
     Properties //shader properties to be edited in the inspector
     { 
-        _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _MainTex ("Albedo Tex", 2D) = "white" {}
+        _AlbedoColor ("Albedo (RGB)", Color) = (1,1,1,1)
         _ShadeColor ("Silhouette Color", Color) = (0.47, 0.48, 0.46, 1)
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
+        _MetallicTex ("Metallic Tex", 2D) = "white" {}
+        _Normal ("Normal map", 2D) = "bump" {}
+        _Occlusion ("Occlusion map", 2D) = "white" {}
+        _Emission ("Emission map", 2D) = "black" {}
 
     }
     SubShader {
@@ -69,21 +74,34 @@
         #pragma target 3.0
 
         sampler2D _MainTex;
+        sampler2D _MetallicTex;
+        sampler2D _Normal;
+        sampler2D _Occlusion;
+        sampler2D _Emission;
 
         struct Input {
             float2 uv_MainTex;
+            float2 uv_MetallicTex;
+            float2 uv_Normal;
+            float2 uv_Occlusion;
+            float2 uv_Emission;
         };
 
         half _Glossiness;
         half _Metallic;
-        fixed4 _Color;
+        fixed4 _AlbedoColor;
 
         void surf (Input IN, inout SurfaceOutputStandard o) //standard surface shader with color, metallic, smoothness, and alpha properties
         { 
-            fixed4 c = tex2D (_MainTex, IN.uv_MainTex);
+            fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _AlbedoColor;
             o.Albedo = c.rgb;
-            o.Metallic = _Metallic;
+            fixed4 m = _Metallic * tex2D(_MetallicTex, IN.uv_MetallicTex);
+            o.Metallic = m.rgb;
             o.Smoothness = _Glossiness;
+            fixed4 n = tex2D(_Normal, IN.uv_Normal);
+            o.Normal = n.rgb;
+            o.Occlusion = tex2D(_Occlusion, IN.uv_Occlusion);
+            o.Emission = tex2D(_Emission, IN.uv_Emission);
             o.Alpha = c.a;
         }
         
