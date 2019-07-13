@@ -99,13 +99,13 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="988">
-              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+              <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding>
-                <marker date="1563059242999" expanded="true" signature="6:168" ph="..." />
-                <marker date="1563059242999" expanded="true" signature="211:1685" ph="{...}" />
-                <marker date="1563059242999" expanded="true" signature="716:1188" ph="{...}" />
-                <marker date="1563059242999" expanded="true" signature="895:989" ph="{...}" />
-                <marker date="1563059242999" expanded="true" signature="1217:1683" ph="{...}" />
+                <marker date="1563059867762" expanded="true" signature="6:93" ph="..." />
+                <marker date="1563059867762" expanded="true" signature="136:1620" ph="{...}" />
+                <marker date="1563059867762" expanded="true" signature="641:1113" ph="{...}" />
+                <marker date="1563059867762" expanded="true" signature="820:914" ph="{...}" />
+                <marker date="1563059867762" expanded="true" signature="1142:1608" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -436,12 +436,12 @@
       <workItem from="1562688428046" duration="10414000" />
       <workItem from="1562713671985" duration="964000" />
       <workItem from="1563050846028" duration="150000" />
-      <workItem from="1563051122912" duration="4059000" />
+      <workItem from="1563051122912" duration="5305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136178000" />
+    <option name="totallyTimeSpent" value="137424000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,7 +454,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11601113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1116,13 +1115,13 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="988">
-          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding>
-            <marker date="1563059242999" expanded="true" signature="6:168" ph="..." />
-            <marker date="1563059242999" expanded="true" signature="211:1685" ph="{...}" />
-            <marker date="1563059242999" expanded="true" signature="716:1188" ph="{...}" />
-            <marker date="1563059242999" expanded="true" signature="895:989" ph="{...}" />
-            <marker date="1563059242999" expanded="true" signature="1217:1683" ph="{...}" />
+            <marker date="1563059867762" expanded="true" signature="6:93" ph="..." />
+            <marker date="1563059867762" expanded="true" signature="136:1620" ph="{...}" />
+            <marker date="1563059867762" expanded="true" signature="641:1113" ph="{...}" />
+            <marker date="1563059867762" expanded="true" signature="820:914" ph="{...}" />
+            <marker date="1563059867762" expanded="true" signature="1142:1608" ph="{...}" />
           </folding>
         </state>
       </provider>
