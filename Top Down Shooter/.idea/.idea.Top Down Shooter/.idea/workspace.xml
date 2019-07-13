@@ -3,21 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrawBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrawBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DummyTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyTarget.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Enemy.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/Enemy.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserSight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserSight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,40 +19,113 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            <state>
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding>
-                <marker date="1562645169238" expanded="true" signature="176:1579" ph="{...}" />
-                <marker date="1562645169238" expanded="true" signature="482:639" ph="{...}" />
-                <marker date="1562645169238" expanded="true" signature="645:875" ph="/// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands ... " />
-                <marker date="1562645169238" expanded="true" signature="930:1161" ph="{...}" />
-                <marker date="1562645169238" expanded="true" signature="1167:1362" ph="/// When a new weapon is picked up we need to get rid of the old one, to this destroys the current weapon and ... " />
-                <marker date="1562645169238" expanded="true" signature="1394:1577" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="27:3058" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="98:595" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="610:3033" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="693:737" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="803:1795" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="826:1780" ph="{...}" />
+                <marker date="1562700614130" expanded="true" signature="1854:3022" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <marker date="1562702975077" expanded="true" signature="6:44" ph="..." />
+                <marker date="1562702975077" expanded="true" signature="86:3461" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="1418:1550" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="1577:1610" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="1616:1721" ph="/// Determines if the player has won. if so, invokes the onWin event ... " />
+                <marker date="1562702975077" expanded="true" signature="1750:1832" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="1839:1939" ph="/// Instantiates the player and adds a listener for their death ... " />
+                <marker date="1562702975077" expanded="true" signature="1970:2189" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="2195:2416" ph="/// Called from the onDie event on player.Health. This removes the listener and subtracts lives determining ... " />
+                <marker date="1562702975077" expanded="true" signature="2453:2724" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="2545:2647" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="2660:2718" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="2730:2906" ph="/// Called from inputManager when the pause key is pressed. Sets bool pause to true, stops timescale, ... " />
+                <marker date="1562702975077" expanded="true" signature="2937:3080" ph="{...}" />
+                <marker date="1562702975077" expanded="true" signature="3086:3311" ph="/// Called from either a ui button click or the press of the pause key when the game is in a pause state. ... " />
+                <marker date="1562702975077" expanded="true" signature="3343:3459" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
+              <folding>
+                <marker date="1563051937949" expanded="true" signature="61:3645" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="368:798" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="501:599" ph="/* null reference exception, called in awake method to prevent ... */" />
+                <marker date="1563051937949" expanded="true" signature="714:792" ph="/* increase performance as opposed to creating a new plane ... */" />
+                <marker date="1563051937949" expanded="true" signature="824:953" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="980:1134" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="1140:1259" ph="/// Checks for pause keyboard input and calls the appropriate GameManager function ... " />
+                <marker date="1563051937949" expanded="true" signature="1300:1612" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="1338:1497" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="1395:1461" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="1618:1763" ph="/// Searches for input on various miscellaneous keys and then tells the player that the key has been pressed ... " />
+                <marker date="1563051937949" expanded="true" signature="1795:2013" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="1844:1903" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="1948:2007" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="2019:2150" ph="/// Searches for mouse button input and then tells the player that the button has been pressed ... " />
+                <marker date="1563051937949" expanded="true" signature="2185:2454" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="2233:2329" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="2461:2690" ph="/// gets horizontal and vertical axis input and clamps the magnitude to 1, then passes input to ... " />
+                <marker date="1563051937949" expanded="true" signature="2719:2924" ph="{...}" />
+                <marker date="1563051937949" expanded="true" signature="2930:3277" ph="/// takes the mouse position and casts a ray from the screen point to the plane created in the awake method, ... " />
+                <marker date="1563051937949" expanded="true" signature="3316:3643" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="63" column="69" lean-forward="true" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+            <state relative-caret-position="988">
+              <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
               <folding>
-                <marker date="1562704344903" expanded="true" signature="6:86" ph="..." />
-                <marker date="1562704344903" expanded="true" signature="133:2417" ph="{...}" />
-                <marker date="1562704344903" expanded="true" signature="464:673" ph="{...}" />
-                <marker date="1562704344903" expanded="true" signature="679:1072" ph="[...]" />
-                <marker date="1562704344903" expanded="true" signature="1149:1264" ph="/// This loads the CDF array with weights from the weightedObject array.weight ... " />
-                <marker date="1562704344903" expanded="true" signature="1296:1568" ph="{...}" />
-                <marker date="1562704344903" expanded="true" signature="1436:1562" ph="{...}" />
-                <marker date="1562704344903" expanded="true" signature="1574:1672" ph="/// Chooses a random item from the array based off of weights ... " />
-                <marker date="1562704344903" expanded="true" signature="1701:1911" ph="{...}" />
-                <marker date="1562704344903" expanded="true" signature="1937:1973" ph="{...}" />
-                <marker date="1562704344903" expanded="true" signature="1979:2081" ph="/// Determines if an item should be dropped or not on enemy death ... " />
-                <marker date="1562704344903" expanded="true" signature="2108:2415" ph="{...}" />
+                <marker date="1563059242999" expanded="true" signature="6:168" ph="..." />
+                <marker date="1563059242999" expanded="true" signature="211:1685" ph="{...}" />
+                <marker date="1563059242999" expanded="true" signature="716:1188" ph="{...}" />
+                <marker date="1563059242999" expanded="true" signature="895:989" ph="{...}" />
+                <marker date="1563059242999" expanded="true" signature="1217:1683" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-110">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+              <folding>
+                <marker date="1562702402666" expanded="true" signature="6:53" ph="..." />
+                <marker date="1562702402666" expanded="true" signature="96:1776" ph="{...}" />
+                <marker date="1562702402666" expanded="true" signature="639:712" ph="{...}" />
+                <marker date="1562702402666" expanded="true" signature="718:810" ph="/// Instantiates a random enemy at a random spawn point ... " />
+                <marker date="1562702402666" expanded="true" signature="840:1363" ph="{...}" />
+                <marker date="1562702402666" expanded="true" signature="1390:1549" ph="{...}" />
+                <marker date="1562702402666" expanded="true" signature="1477:1543" ph="{...}" />
+                <marker date="1562702402666" expanded="true" signature="1555:1650" ph="/// removes the dead enemy from the currently active count ... " />
+                <marker date="1562702402666" expanded="true" signature="1686:1774" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -70,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="-44">
               <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
                 <marker date="1561345309566" expanded="true" signature="54:518" ph="{...}" />
@@ -84,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="-44">
+              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
               <folding>
                 <marker date="1562704138244" expanded="true" signature="63:2387" ph="{...}" />
                 <marker date="1562704138244" expanded="true" signature="70:237" ph="[...]" />
@@ -102,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+            <state relative-caret-position="-132">
+              <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
               <folding>
                 <marker date="1562704138245" expanded="true" signature="6:75" ph="..." />
                 <marker date="1562704138245" expanded="true" signature="115:3003" ph="{...}" />
@@ -131,72 +195,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1562704138243" expanded="true" signature="6:79" ph="..." />
-                <marker date="1562704138243" expanded="true" signature="127:1084" ph="{...}" />
-                <marker date="1562704138243" expanded="true" signature="376:551" ph="/// coroutine that picks a random item from the array to spawn and then instantiates it after waiting for a ... " />
-                <marker date="1562704138243" expanded="true" signature="585:853" ph="{...}" />
-                <marker date="1562704138243" expanded="true" signature="859:942" ph="/// starts the coroutine when called by events ... " />
-                <marker date="1562704138243" expanded="true" signature="973:1020" ph="{...}" />
-                <marker date="1562704138243" expanded="true" signature="1046:1082" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-471">
-              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            <state relative-caret-position="-22">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
-                <marker date="1562645268560" expanded="true" signature="6:66" ph="..." />
-                <marker date="1562645268560" expanded="true" signature="113:3472" ph="{...}" />
-                <marker date="1562645268560" expanded="true" signature="733:935" ph="[...]" />
-                <marker date="1562645268560" expanded="true" signature="1391:1471" ph="{...}" />
-                <marker date="1562645268560" expanded="true" signature="2304:2401" ph="/// abstract method that must be overridden in child classes ... " />
-                <marker date="1562645268560" expanded="true" signature="2444:2625" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
-                <marker date="1562645268560" expanded="true" signature="2658:2801" ph="{...}" />
-                <marker date="1562645268560" expanded="true" signature="2807:2929" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
-                <marker date="1562645268560" expanded="true" signature="2960:3178" ph="{...}" />
-                <marker date="1562645268560" expanded="true" signature="3052:3093" ph="{...}" />
-                <marker date="1562645268560" expanded="true" signature="3125:3172" ph="{...}" />
-                <marker date="1562645268560" expanded="true" signature="3184:3394" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
-                <marker date="1562645268560" expanded="true" signature="3424:3470" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <marker date="1561922634308" expanded="true" signature="53:1008" ph="{...}" />
-                <marker date="1561922634308" expanded="true" signature="80:195" ph="{...}" />
-                <marker date="1561922634308" expanded="true" signature="202:487" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-                <marker date="1561922634308" expanded="true" signature="523:1006" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding>
-                <marker date="1561922634306" expanded="true" signature="56:1317" ph="{...}" />
-                <marker date="1561922634306" expanded="true" signature="219:334" ph="{...}" />
-                <marker date="1561922634306" expanded="true" signature="341:702" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-                <marker date="1561922634306" expanded="true" signature="738:1315" ph="{...}" />
-                <marker date="1561922634306" expanded="true" signature="793:1244" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="6:44" ph="..." />
+                <marker date="1562714663878" expanded="true" signature="91:3450" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="711:913" ph="[...]" />
+                <marker date="1562714663878" expanded="true" signature="1369:1449" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="2282:2379" ph="/// abstract method that must be overridden in child classes ... " />
+                <marker date="1562714663878" expanded="true" signature="2422:2603" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
+                <marker date="1562714663878" expanded="true" signature="2636:2779" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="2785:2907" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
+                <marker date="1562714663878" expanded="true" signature="2938:3156" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="3030:3071" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="3103:3150" ph="{...}" />
+                <marker date="1562714663878" expanded="true" signature="3162:3372" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
+                <marker date="1562714663878" expanded="true" signature="3402:3448" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -205,7 +221,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="-66">
               <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <marker date="1562550366231" expanded="true" signature="6:40" ph="..." />
@@ -240,6 +256,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
@@ -287,7 +304,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrawBox.cs" />
@@ -296,7 +312,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LaserSight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs" />
@@ -304,6 +319,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" />
       </list>
     </option>
   </component>
@@ -319,11 +337,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -342,6 +359,7 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,7 +370,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -415,12 +433,15 @@
       <workItem from="1562554915454" duration="994000" />
       <workItem from="1562611840934" duration="9652000" />
       <workItem from="1562636216382" duration="7685000" />
-      <workItem from="1562688428046" duration="10138000" />
+      <workItem from="1562688428046" duration="10414000" />
+      <workItem from="1562713671985" duration="964000" />
+      <workItem from="1563050846028" duration="150000" />
+      <workItem from="1563051122912" duration="4059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130729000" />
+    <option name="totallyTimeSpent" value="136178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,7 +456,7 @@
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11362734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11601113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -465,7 +486,7 @@
       <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11362734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.114421934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -547,26 +568,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <marker date="1562700614130" expanded="true" signature="27:3058" ph="{...}" />
-            <marker date="1562700614130" expanded="true" signature="98:595" ph="{...}" />
-            <marker date="1562700614130" expanded="true" signature="610:3033" ph="{...}" />
-            <marker date="1562700614130" expanded="true" signature="693:737" ph="{...}" />
-            <marker date="1562700614130" expanded="true" signature="803:1795" ph="{...}" />
-            <marker date="1562700614130" expanded="true" signature="826:1780" ph="{...}" />
-            <marker date="1562700614130" expanded="true" signature="1854:3022" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state relative-caret-position="260">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
           <folding>
             <marker date="1561922607819" expanded="true" signature="53:1009" ph="{...}" />
             <marker date="1561922607819" expanded="true" signature="80:196" ph="{...}" />
@@ -590,7 +595,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="120">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding>
             <marker date="1562701729170" expanded="true" signature="61:1050" ph="{...}" />
             <marker date="1562701729170" expanded="true" signature="386:566" ph="{...}" />
@@ -602,11 +608,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterAnimationController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
+        <state relative-caret-position="2460">
           <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
           <folding>
-            <marker date="1562024443230" expanded="true" signature="6:47" ph="..." />
-            <marker date="1562024443230" expanded="true" signature="143:4756" ph="{...}" />
+            <element signature="e#0#47#0" expanded="true" />
             <marker date="1562024443230" expanded="true" signature="854:907" ph="{...}" />
             <marker date="1562024443230" expanded="true" signature="914:1133" ph="/// takes input from input manager, converts it to local space, gives it a magnitude equal to the ... " />
             <marker date="1562024443230" expanded="true" signature="1179:1342" ph="{...}" />
@@ -644,7 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DrawBox.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="400">
           <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
             <marker date="1562701729172" expanded="true" signature="56:696" ph="{...}" />
@@ -656,8 +661,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DummyTarget.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        <state relative-caret-position="29">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
           <folding>
             <marker date="1562702029316" expanded="true" signature="6:47" ph="..." />
             <marker date="1562702029316" expanded="true" signature="89:3210" ph="{...}" />
@@ -680,8 +685,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="129" column="27" lean-forward="true" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
+        <state relative-caret-position="940">
+          <caret line="129" column="27" selection-start-line="129" selection-start-column="27" selection-end-line="129" selection-end-column="27" />
           <folding>
             <marker date="1562702314542" expanded="true" signature="6:104" ph="..." />
             <marker date="1562702314542" expanded="true" signature="179:5310" ph="{...}" />
@@ -712,49 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <marker date="1562702402666" expanded="true" signature="6:53" ph="..." />
-            <marker date="1562702402666" expanded="true" signature="96:1776" ph="{...}" />
-            <marker date="1562702402666" expanded="true" signature="639:712" ph="{...}" />
-            <marker date="1562702402666" expanded="true" signature="718:810" ph="/// Instantiates a random enemy at a random spawn point ... " />
-            <marker date="1562702402666" expanded="true" signature="840:1363" ph="{...}" />
-            <marker date="1562702402666" expanded="true" signature="1390:1549" ph="{...}" />
-            <marker date="1562702402666" expanded="true" signature="1477:1543" ph="{...}" />
-            <marker date="1562702402666" expanded="true" signature="1555:1650" ph="/// removes the dead enemy from the currently active count ... " />
-            <marker date="1562702402666" expanded="true" signature="1686:1774" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="909">
-          <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
-          <folding>
-            <marker date="1562702975077" expanded="true" signature="6:44" ph="..." />
-            <marker date="1562702975077" expanded="true" signature="86:3461" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="1418:1550" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="1577:1610" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="1616:1721" ph="/// Determines if the player has won. if so, invokes the onWin event ... " />
-            <marker date="1562702975077" expanded="true" signature="1750:1832" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="1839:1939" ph="/// Instantiates the player and adds a listener for their death ... " />
-            <marker date="1562702975077" expanded="true" signature="1970:2189" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="2195:2416" ph="/// Called from the onDie event on player.Health. This removes the listener and subtracts lives determining ... " />
-            <marker date="1562702975077" expanded="true" signature="2453:2724" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="2545:2647" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="2660:2718" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="2730:2906" ph="/// Called from inputManager when the pause key is pressed. Sets bool pause to true, stops timescale, ... " />
-            <marker date="1562702975077" expanded="true" signature="2937:3080" ph="{...}" />
-            <marker date="1562702975077" expanded="true" signature="3086:3311" ph="/// Called from either a ui button click or the press of the pause key when the game is in a pause state. ... " />
-            <marker date="1562702975077" expanded="true" signature="3343:3459" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HealPickup.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -769,7 +731,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Health.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
+        <state relative-caret-position="649">
           <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding>
             <marker date="1562553362027" expanded="true" signature="6:44" ph="..." />
@@ -788,7 +750,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HealthBar.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="749">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <marker date="1562703590244" expanded="true" signature="6:40" ph="..." />
             <marker date="1562703590244" expanded="true" signature="80:1781" ph="{...}" />
@@ -803,40 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="107" column="42" lean-forward="true" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
-          <folding>
-            <marker date="1562703652484" expanded="true" signature="61:3652" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="368:798" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="501:599" ph="/* null reference exception, called in awake method to prevent ... */" />
-            <marker date="1562703652484" expanded="true" signature="714:792" ph="/* increase performance as opposed to creating a new plane ... */" />
-            <marker date="1562703652484" expanded="true" signature="824:953" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="980:1134" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="1140:1259" ph="/// Checks for pause keyboard input and calls the appropriate GameManager function ... " />
-            <marker date="1562703652484" expanded="true" signature="1300:1618" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="1338:1500" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="1398:1464" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="1624:1769" ph="/// Searches for input on various miscellaneous keys and then tells the player that the key has been pressed ... " />
-            <marker date="1562703652484" expanded="true" signature="1801:2022" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="1848:1907" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="1957:2016" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="2028:2159" ph="/// Searches for mouse button input and then tells the player that the button has been pressed ... " />
-            <marker date="1562703652484" expanded="true" signature="2194:2461" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="2241:2337" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="2468:2697" ph="/// gets horizontal and vertical axis input and clamps the magnitude to 1, then passes input to ... " />
-            <marker date="1562703652484" expanded="true" signature="2726:2931" ph="{...}" />
-            <marker date="1562703652484" expanded="true" signature="2937:3284" ph="/// takes the mouse position and casts a ray from the screen point to the plane created in the awake method, ... " />
-            <marker date="1562703652484" expanded="true" signature="3323:3650" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LaserSight.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <marker date="1562703756168" expanded="true" signature="59:883" ph="{...}" />
             <marker date="1562703756168" expanded="true" signature="148:249" ph="{...}" />
@@ -850,7 +782,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/LightFollowsMouse.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
           <folding>
             <marker date="1562704138247" expanded="true" signature="66:822" ph="{...}" />
             <marker date="1562704138247" expanded="true" signature="208:423" ph="/// Takes a target point from the mouse position in the input manager and moves the light this script is attached ... " />
@@ -884,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-151">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding>
             <marker date="1562619173744" expanded="true" signature="132:3050" ph="{...}" />
             <marker date="1562619173744" expanded="true" signature="694:997" ph="{...}" />
@@ -907,8 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="-131">
           <folding>
             <marker date="1562704138246" expanded="true" signature="56:1521" ph="{...}" />
             <marker date="1562704138246" expanded="true" signature="253:549" ph="{...}" />
@@ -966,24 +896,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="920">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding>
-            <marker date="1562550366231" expanded="true" signature="6:40" ph="..." />
-            <marker date="1562550366231" expanded="true" signature="118:582" ph="{...}" />
-            <marker date="1562550366231" expanded="true" signature="169:218" ph="{...}" />
-            <marker date="1562550366231" expanded="true" signature="224:443" ph="/// Temporary method and class until the official UI gets into the project ... " />
-            <marker date="1562550366231" expanded="true" signature="468:580" ph="{...}" />
+            <marker date="1562645169238" expanded="true" signature="482:639" ph="{...}" />
+            <marker date="1562645169238" expanded="true" signature="645:875" ph="/// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands ... " />
+            <marker date="1562645169238" expanded="true" signature="930:1161" ph="{...}" />
+            <marker date="1562645169238" expanded="true" signature="1167:1362" ph="/// When a new weapon is picked up we need to get rid of the old one, to this destroys the current weapon and ... " />
+            <marker date="1562645169238" expanded="true" signature="1394:1577" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <marker date="1562704344903" expanded="true" signature="6:86" ph="..." />
+            <marker date="1562704344903" expanded="true" signature="133:2417" ph="{...}" />
+            <marker date="1562704344903" expanded="true" signature="464:673" ph="{...}" />
+            <marker date="1562704344903" expanded="true" signature="679:1072" ph="[...]" />
+            <marker date="1562704344903" expanded="true" signature="1149:1264" ph="/// This loads the CDF array with weights from the weightedObject array.weight ... " />
+            <marker date="1562704344903" expanded="true" signature="1296:1568" ph="{...}" />
+            <marker date="1562704344903" expanded="true" signature="1436:1562" ph="{...}" />
+            <marker date="1562704344903" expanded="true" signature="1574:1672" ph="/// Chooses a random item from the array based off of weights ... " />
+            <marker date="1562704344903" expanded="true" signature="1701:1911" ph="{...}" />
+            <marker date="1562704344903" expanded="true" signature="1937:1973" ph="{...}" />
+            <marker date="1562704344903" expanded="true" signature="1979:2081" ph="/// Determines if an item should be dropped or not on enemy death ... " />
+            <marker date="1562704344903" expanded="true" signature="2108:2415" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SilhouetteShader.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding>
+            <marker date="1562700614130" expanded="true" signature="27:3058" ph="{...}" />
+            <marker date="1562700614130" expanded="true" signature="98:595" ph="{...}" />
+            <marker date="1562700614130" expanded="true" signature="610:3033" ph="{...}" />
+            <marker date="1562700614130" expanded="true" signature="693:737" ph="{...}" />
+            <marker date="1562700614130" expanded="true" signature="803:1795" ph="{...}" />
+            <marker date="1562700614130" expanded="true" signature="826:1780" ph="{...}" />
+            <marker date="1562700614130" expanded="true" signature="1854:3022" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <marker date="1562702975077" expanded="true" signature="6:44" ph="..." />
+            <marker date="1562702975077" expanded="true" signature="86:3461" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="1418:1550" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="1577:1610" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="1616:1721" ph="/// Determines if the player has won. if so, invokes the onWin event ... " />
+            <marker date="1562702975077" expanded="true" signature="1750:1832" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="1839:1939" ph="/// Instantiates the player and adds a listener for their death ... " />
+            <marker date="1562702975077" expanded="true" signature="1970:2189" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="2195:2416" ph="/// Called from the onDie event on player.Health. This removes the listener and subtracts lives determining ... " />
+            <marker date="1562702975077" expanded="true" signature="2453:2724" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="2545:2647" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="2660:2718" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="2730:2906" ph="/// Called from inputManager when the pause key is pressed. Sets bool pause to true, stops timescale, ... " />
+            <marker date="1562702975077" expanded="true" signature="2937:3080" ph="{...}" />
+            <marker date="1562702975077" expanded="true" signature="3086:3311" ph="/// Called from either a ui button click or the press of the pause key when the game is in a pause state. ... " />
+            <marker date="1562702975077" expanded="true" signature="3343:3459" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+          <folding>
+            <marker date="1562702402666" expanded="true" signature="6:53" ph="..." />
+            <marker date="1562702402666" expanded="true" signature="96:1776" ph="{...}" />
+            <marker date="1562702402666" expanded="true" signature="639:712" ph="{...}" />
+            <marker date="1562702402666" expanded="true" signature="718:810" ph="/// Instantiates a random enemy at a random spawn point ... " />
+            <marker date="1562702402666" expanded="true" signature="840:1363" ph="{...}" />
+            <marker date="1562702402666" expanded="true" signature="1390:1549" ph="{...}" />
+            <marker date="1562702402666" expanded="true" signature="1477:1543" ph="{...}" />
+            <marker date="1562702402666" expanded="true" signature="1555:1650" ph="/// removes the dead enemy from the currently active count ... " />
+            <marker date="1562702402666" expanded="true" signature="1686:1774" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1561345309566" expanded="true" signature="54:518" ph="{...}" />
+            <marker date="1561345309566" expanded="true" signature="163:353" ph="/// overrides the OnPickUp method of the pickup class and tells the player to unequip the current weapon and ... " />
+            <marker date="1561345309566" expanded="true" signature="405:516" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TimeController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="-44">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
           <folding>
             <marker date="1562704138244" expanded="true" signature="63:2387" ph="{...}" />
             <marker date="1562704138244" expanded="true" signature="70:237" ph="[...]" />
@@ -998,8 +1020,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+        <state relative-caret-position="-132">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
           <folding>
             <marker date="1562704138245" expanded="true" signature="6:75" ph="..." />
             <marker date="1562704138245" expanded="true" signature="115:3003" ph="{...}" />
@@ -1027,70 +1049,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-471">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="-22">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
           <folding>
-            <marker date="1562645268560" expanded="true" signature="6:66" ph="..." />
-            <marker date="1562645268560" expanded="true" signature="113:3472" ph="{...}" />
-            <marker date="1562645268560" expanded="true" signature="733:935" ph="[...]" />
-            <marker date="1562645268560" expanded="true" signature="1391:1471" ph="{...}" />
-            <marker date="1562645268560" expanded="true" signature="2304:2401" ph="/// abstract method that must be overridden in child classes ... " />
-            <marker date="1562645268560" expanded="true" signature="2444:2625" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
-            <marker date="1562645268560" expanded="true" signature="2658:2801" ph="{...}" />
-            <marker date="1562645268560" expanded="true" signature="2807:2929" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
-            <marker date="1562645268560" expanded="true" signature="2960:3178" ph="{...}" />
-            <marker date="1562645268560" expanded="true" signature="3052:3093" ph="{...}" />
-            <marker date="1562645268560" expanded="true" signature="3125:3172" ph="{...}" />
-            <marker date="1562645268560" expanded="true" signature="3184:3394" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
-            <marker date="1562645268560" expanded="true" signature="3424:3470" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="6:44" ph="..." />
+            <marker date="1562714663878" expanded="true" signature="91:3450" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="711:913" ph="[...]" />
+            <marker date="1562714663878" expanded="true" signature="1369:1449" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="2282:2379" ph="/// abstract method that must be overridden in child classes ... " />
+            <marker date="1562714663878" expanded="true" signature="2422:2603" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
+            <marker date="1562714663878" expanded="true" signature="2636:2779" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="2785:2907" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
+            <marker date="1562714663878" expanded="true" signature="2938:3156" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="3030:3071" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="3103:3150" ph="{...}" />
+            <marker date="1562714663878" expanded="true" signature="3162:3372" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
+            <marker date="1562714663878" expanded="true" signature="3402:3448" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponAgent.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        <state relative-caret-position="-66">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
-            <marker date="1562645169238" expanded="true" signature="176:1579" ph="{...}" />
-            <marker date="1562645169238" expanded="true" signature="482:639" ph="{...}" />
-            <marker date="1562645169238" expanded="true" signature="645:875" ph="/// when an item is picked up, EquipWeapon is called. A weapon is instantiated into the character's hands ... " />
-            <marker date="1562645169238" expanded="true" signature="930:1161" ph="{...}" />
-            <marker date="1562645169238" expanded="true" signature="1167:1362" ph="/// When a new weapon is picked up we need to get rid of the old one, to this destroys the current weapon and ... " />
-            <marker date="1562645169238" expanded="true" signature="1394:1577" ph="{...}" />
+            <marker date="1562550366231" expanded="true" signature="6:40" ph="..." />
+            <marker date="1562550366231" expanded="true" signature="118:582" ph="{...}" />
+            <marker date="1562550366231" expanded="true" signature="169:218" ph="{...}" />
+            <marker date="1562550366231" expanded="true" signature="224:443" ph="/// Temporary method and class until the official UI gets into the project ... " />
+            <marker date="1562550366231" expanded="true" signature="468:580" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeaponPickup.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InputManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="413">
+          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
           <folding>
-            <marker date="1561345309566" expanded="true" signature="54:518" ph="{...}" />
-            <marker date="1561345309566" expanded="true" signature="163:353" ph="/// overrides the OnPickUp method of the pickup class and tells the player to unequip the current weapon and ... " />
-            <marker date="1561345309566" expanded="true" signature="405:516" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="61:3645" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="368:798" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="501:599" ph="/* null reference exception, called in awake method to prevent ... */" />
+            <marker date="1563051937949" expanded="true" signature="714:792" ph="/* increase performance as opposed to creating a new plane ... */" />
+            <marker date="1563051937949" expanded="true" signature="824:953" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="980:1134" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="1140:1259" ph="/// Checks for pause keyboard input and calls the appropriate GameManager function ... " />
+            <marker date="1563051937949" expanded="true" signature="1300:1612" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="1338:1497" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="1395:1461" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="1618:1763" ph="/// Searches for input on various miscellaneous keys and then tells the player that the key has been pressed ... " />
+            <marker date="1563051937949" expanded="true" signature="1795:2013" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="1844:1903" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="1948:2007" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="2019:2150" ph="/// Searches for mouse button input and then tells the player that the button has been pressed ... " />
+            <marker date="1563051937949" expanded="true" signature="2185:2454" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="2233:2329" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="2461:2690" ph="/// gets horizontal and vertical axis input and clamps the magnitude to 1, then passes input to ... " />
+            <marker date="1563051937949" expanded="true" signature="2719:2924" ph="{...}" />
+            <marker date="1563051937949" expanded="true" signature="2930:3277" ph="/// takes the mouse position and casts a ray from the screen point to the plane created in the awake method, ... " />
+            <marker date="1563051937949" expanded="true" signature="3316:3643" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="63" column="69" lean-forward="true" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+        <state relative-caret-position="988">
+          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
           <folding>
-            <marker date="1562704344903" expanded="true" signature="6:86" ph="..." />
-            <marker date="1562704344903" expanded="true" signature="133:2417" ph="{...}" />
-            <marker date="1562704344903" expanded="true" signature="464:673" ph="{...}" />
-            <marker date="1562704344903" expanded="true" signature="679:1072" ph="[...]" />
-            <marker date="1562704344903" expanded="true" signature="1149:1264" ph="/// This loads the CDF array with weights from the weightedObject array.weight ... " />
-            <marker date="1562704344903" expanded="true" signature="1296:1568" ph="{...}" />
-            <marker date="1562704344903" expanded="true" signature="1436:1562" ph="{...}" />
-            <marker date="1562704344903" expanded="true" signature="1574:1672" ph="/// Chooses a random item from the array based off of weights ... " />
-            <marker date="1562704344903" expanded="true" signature="1701:1911" ph="{...}" />
-            <marker date="1562704344903" expanded="true" signature="1937:1973" ph="{...}" />
-            <marker date="1562704344903" expanded="true" signature="1979:2081" ph="/// Determines if an item should be dropped or not on enemy death ... " />
-            <marker date="1562704344903" expanded="true" signature="2108:2415" ph="{...}" />
+            <marker date="1563059242999" expanded="true" signature="6:168" ph="..." />
+            <marker date="1563059242999" expanded="true" signature="211:1685" ph="{...}" />
+            <marker date="1563059242999" expanded="true" signature="716:1188" ph="{...}" />
+            <marker date="1563059242999" expanded="true" signature="895:989" ph="{...}" />
+            <marker date="1563059242999" expanded="true" signature="1217:1683" ph="{...}" />
           </folding>
         </state>
       </provider>
