@@ -17,6 +17,7 @@ public class Enemy : WeaponAgent
 
     public override void Awake()
     {
+        Random.InitState(gameObject.GetInstanceID());
         agent = GetComponent<NavMeshAgent>();
         base.EquipWeapon(weaponPrefabs[Random.Range(0, weaponPrefabs.Length)]);
         base.Awake();

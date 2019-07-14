@@ -76,6 +76,8 @@ public abstract class Weapon : MonoBehaviour
 
     [SerializeField] protected AudioClip[] firingSounds;
 
+    [SerializeField] protected ParticleSystem muzzleFlashParticle;
+
     /// <summary>
     /// abstract method that must be overridden in child classes
     /// </summary>

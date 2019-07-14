@@ -204,6 +204,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 883efb9346be748408021d2c6a34175f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  origin: {fileID: 0}
+  dustParticle: {fileID: 6987030847350813737, guid: 56a73c0a1c394b74daa9548683c2b8ca,
+    type: 3}
+  bloodParticle: {fileID: 8811177963117988786, guid: 4c4b58f211590a44e8d48e52b6c9dbb1,
+    type: 3}
 --- !u!136 &-5187000870655440431
 CapsuleCollider:
   m_ObjectHideFlags: 0

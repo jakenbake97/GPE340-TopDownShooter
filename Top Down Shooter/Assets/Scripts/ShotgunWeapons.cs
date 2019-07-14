@@ -31,6 +31,10 @@ public class ShotgunWeapons : Weapon
         }
 
         audioSource.PlayOneShot(firingSounds[Random.Range(0, firingSounds.Length)]);
+        if (muzzleFlashParticle)
+        {
+            muzzleFlashParticle.Emit(1);
+        }
 
         timeToShoot = Time.time + fireRate;
         ammoLeft--;

@@ -25,6 +25,10 @@ public class AutoWeapons : Weapon
         bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce);
 
         audioSource.PlayOneShot(firingSounds[Random.Range(0, firingSounds.Length)]);
+        if (muzzleFlashParticle)
+        {
+            muzzleFlashParticle.Emit(1);
+        }
 
         timeToShoot = Time.time + fireRate;
         ammoLeft--;
