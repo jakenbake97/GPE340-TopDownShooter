@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class SettingsMenu : MonoBehaviour
@@ -11,6 +12,7 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] private Slider fXVolumeSlider;
 
     [SerializeField] private Slider musicVolumeSlider;
+
 
     [Header("Graphics Settings"), SerializeField]
     private Dropdown resolutionDropdown;
@@ -49,6 +51,17 @@ public class SettingsMenu : MonoBehaviour
         qualityDropdown.value = QualitySettings.GetQualityLevel();
         applyButton.interactable = false;
     }
-    
-    
+
+    public void SaveData()
+    {
+        PlayerPrefs.SetFloat("Master Volume", masterVolumeSlider.value);
+        PlayerPrefs.SetFloat("FX Volume", fXVolumeSlider.value);
+        PlayerPrefs.SetFloat("Music Volume", musicVolumeSlider.value);
+
+        // TODO: apply audio settings to mixers
+
+        var value = resolutionDropdown.value;
+        Screen.SetResolution(Screen.resolutions[value].width, Screen.resolutions[value].height, fullscreenToggle);
+        QualitySettings.SetQualityLevel(qualityDropdown.value);
+    }
 }
