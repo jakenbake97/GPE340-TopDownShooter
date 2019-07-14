@@ -78,7 +78,7 @@ public class SettingsMenu : MonoBehaviour
         audioMixer.SetFloat("Music Volume", musicVolumeSlider.value);
 
         var value = resolutionDropdown.value;
-        Screen.SetResolution(Screen.resolutions[value].width, Screen.resolutions[value].height, fullscreenToggle);
+        Screen.SetResolution(Screen.resolutions[value].width, Screen.resolutions[value].height, fullscreenToggle.isOn);
         QualitySettings.SetQualityLevel(qualityDropdown.value);
     }
 }
