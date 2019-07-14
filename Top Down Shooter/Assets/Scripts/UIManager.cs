@@ -24,8 +24,6 @@ public class UIManager : MonoBehaviour
     [SerializeField, Tooltip("The text object to display the number of enemies left")]
     private Text enemiesLeftText;
 
-    public Camera uICamera;
-
     private void Awake()
     {
         Instance = this;

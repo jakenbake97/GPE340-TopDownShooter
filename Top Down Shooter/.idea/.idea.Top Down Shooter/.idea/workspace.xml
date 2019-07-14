@@ -2,109 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eddf453-c71a-4950-be73-5af8455a3eb2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Top Down Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/crouching turn 90 left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/crouching turn 90 left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/crouching turn 90 right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/crouching turn 90 right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death crouching headshot front.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death crouching headshot front.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from back headshot.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from back headshot.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from front headshot.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from front headshot.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from the back.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from the back.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from the front.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/death from the front.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle crouching aiming.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle crouching aiming.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle crouching.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/idle crouching.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/jump down.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/jump down.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/jump loop.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/jump loop.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/jump up.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/jump up.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run backward left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run backward left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run backward right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run backward right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run backward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run backward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run forward left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run forward left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run forward right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run forward right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run forward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run forward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/run right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint backward left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint backward left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint backward right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint backward right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint backward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint backward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint forward left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint forward left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint forward right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint forward right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint forward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint forward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/sprint right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/turn 90 left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/turn 90 left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/turn 90 right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/turn 90 right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk backward left.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk backward left.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk backward right.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk backward right.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk backward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk backward.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching backward left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching backward left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching backward right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching backward right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching backward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching backward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching forward left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching forward left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching forward right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching forward right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching forward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching forward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching left.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching left.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching right.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk crouching right.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk forward left.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk forward left.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk forward right.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk forward right.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk forward.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk forward.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk left.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk left.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/walk right.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/walk right.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Settings Menu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Settings Menu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Pistol.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Pistol.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Rifle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Rifle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Shotgun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Shotgun.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Sniper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Sniper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="1900">
               <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
               <folding>
                 <marker date="1563075336116" expanded="true" signature="6:69" ph="..." />
@@ -141,26 +40,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DummyTarget.cs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
+            <state relative-caret-position="641">
+              <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
               <folding>
-                <marker date="1562702029316" expanded="true" signature="6:47" ph="..." />
-                <marker date="1562702029316" expanded="true" signature="89:3210" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="394:673" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="679:862" ph="/// Event called when the animator does an IK pass. If there is a currentWeapon, send its IK targets to the ... " />
-                <marker date="1562702029316" expanded="true" signature="908:1129" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="1135:1335" ph="/// Optionally takes 4 parameters for setting the IK targets and hints. Each target is then given a weight of 1 t ... " />
-                <marker date="1562702029316" expanded="true" signature="1569:3208" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="1604:1920" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="1933:2085" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="2114:2424" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="2437:2587" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="2616:2793" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="2806:2897" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="2925:3099" ph="{...}" />
-                <marker date="1562702029316" expanded="true" signature="3112:3202" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="6:75" ph="..." />
+                <marker date="1563126319204" expanded="true" signature="115:2974" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="951:988" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="994:1115" ph="/// Called when the player is spawned, this sets the health bar target to the player ... " />
+                <marker date="1563126319204" expanded="true" signature="1161:1223" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="1229:1347" ph="/// Called when an enemy is spawned, this sets the health bar target to the enemy ... " />
+                <marker date="1563126319204" expanded="true" signature="1390:1632" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="1659:2055" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="1694:1802" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="1890:1992" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="2061:2138" ph="/// On click event that resumes the game ... " />
+                <marker date="1563126319204" expanded="true" signature="2169:2211" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="2217:2292" ph="/// on click event that quits the game ... " />
+                <marker date="1563126319204" expanded="true" signature="2321:2442" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="2448:2536" ph="/// on click event that refreshes the current scene ... " />
+                <marker date="1563126319204" expanded="true" signature="2566:2624" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="2630:2716" ph="/// on click event that loads the main game scene ... " />
+                <marker date="1563126319204" expanded="true" signature="2746:2804" ph="{...}" />
+                <marker date="1563126319204" expanded="true" signature="2810:2891" ph="/// on click event that loads the menu scene ... " />
+                <marker date="1563126319204" expanded="true" signature="2920:2972" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -169,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Footstep.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="152">
               <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
               <folding>
                 <marker date="1563077137035" expanded="false" signature="6:78" ph="..." />
@@ -183,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
+            <state relative-caret-position="912">
               <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
               <folding>
                 <marker date="1562702402666" expanded="true" signature="6:53" ph="..." />
@@ -203,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="266">
               <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
               <folding>
                 <marker date="1563081110530" expanded="true" signature="6:104" ph="..." />
@@ -236,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="103" lean-forward="true" selection-start-line="33" selection-start-column="103" selection-end-line="33" selection-end-column="103" />
+            <state relative-caret-position="570">
+              <caret line="33" column="103" selection-start-line="33" selection-start-column="103" selection-end-line="33" selection-end-column="103" />
               <folding>
                 <marker date="1563083729460" expanded="true" signature="55:1324" ph="{...}" />
                 <marker date="1563083729460" expanded="true" signature="267:500" ph="/// checks to see if the object that was collided with has a Health component. If so, calls the damage ... " />
@@ -255,7 +160,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="950">
+            <state relative-caret-position="1406">
               <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
               <folding>
                 <marker date="1563080946132" expanded="true" signature="6:44" ph="..." />
@@ -279,7 +184,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="456">
               <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <marker date="1563080975011" expanded="true" signature="53:1190" ph="{...}" />
@@ -295,7 +200,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="513">
               <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <marker date="1563080997739" expanded="true" signature="53:1189" ph="{...}" />
@@ -311,7 +216,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="627">
               <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding>
                 <marker date="1563080997740" expanded="true" signature="56:1497" ph="{...}" />
@@ -403,7 +308,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Ragdoll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RespawnStationary.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TimeController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WeightedItemDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SettingsMenu.cs" />
@@ -415,6 +319,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       </list>
     </option>
   </component>
@@ -430,7 +335,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -452,7 +357,7 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -531,11 +436,12 @@
       <workItem from="1563050846028" duration="150000" />
       <workItem from="1563051122912" duration="5305000" />
       <workItem from="1563063862897" duration="10139000" />
+      <workItem from="1563126232482" duration="87000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147563000" />
+    <option name="totallyTimeSpent" value="147650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,8 +454,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.116805725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.117600314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -988,35 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
-          <folding>
-            <marker date="1562704138245" expanded="true" signature="6:75" ph="..." />
-            <marker date="1562704138245" expanded="true" signature="115:3003" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="980:1017" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="1023:1144" ph="/// Called when the player is spawned, this sets the health bar target to the player ... " />
-            <marker date="1562704138245" expanded="true" signature="1190:1252" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="1258:1376" ph="/// Called when an enemy is spawned, this sets the health bar target to the enemy ... " />
-            <marker date="1562704138245" expanded="true" signature="1419:1661" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="1688:2084" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="1723:1831" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="1919:2021" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="2090:2167" ph="/// On click event that resumes the game ... " />
-            <marker date="1562704138245" expanded="true" signature="2198:2240" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="2246:2321" ph="/// on click event that quits the game ... " />
-            <marker date="1562704138245" expanded="true" signature="2350:2471" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="2477:2565" ph="/// on click event that refreshes the current scene ... " />
-            <marker date="1562704138245" expanded="true" signature="2595:2653" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="2659:2745" ph="/// on click event that loads the main game scene ... " />
-            <marker date="1562704138245" expanded="true" signature="2775:2833" ph="{...}" />
-            <marker date="1562704138245" expanded="true" signature="2839:2920" ph="/// on click event that loads the menu scene ... " />
-            <marker date="1562704138245" expanded="true" signature="2949:3001" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TestHealthText.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1046,34 +924,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
-          <folding>
-            <marker date="1563075336116" expanded="true" signature="6:69" ph="..." />
-            <marker date="1563075336116" expanded="true" signature="111:3792" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="1558:1708" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="1735:1768" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="1774:1879" ph="/// Determines if the player has won. if so, invokes the onWin event ... " />
-            <marker date="1563075336116" expanded="true" signature="1908:1990" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="1997:2097" ph="/// Instantiates the player and adds a listener for their death ... " />
-            <marker date="1563075336116" expanded="true" signature="2128:2347" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="2353:2574" ph="/// Called from the onDie event on player.Health. This removes the listener and subtracts lives determining ... " />
-            <marker date="1563075336116" expanded="true" signature="2611:3055" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="2703:2805" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="2818:3049" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="3061:3237" ph="/// Called from inputManager when the pause key is pressed. Sets bool pause to true, stops timescale, ... " />
-            <marker date="1563075336116" expanded="true" signature="3268:3411" ph="{...}" />
-            <marker date="1563075336116" expanded="true" signature="3417:3642" ph="/// Called from either a ui button click or the press of the pause key when the game is in a pause state. ... " />
-            <marker date="1563075336116" expanded="true" signature="3674:3790" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DummyTarget.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
+        <state>
           <folding>
             <marker date="1562702029316" expanded="true" signature="6:47" ph="..." />
             <marker date="1562702029316" expanded="true" signature="89:3210" ph="{...}" />
@@ -1096,7 +949,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Footstep.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="152">
           <caret line="12" column="88" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
           <folding>
             <marker date="1563077137035" expanded="false" signature="6:78" ph="..." />
@@ -1106,74 +959,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
-          <folding>
-            <marker date="1563080946132" expanded="true" signature="6:44" ph="..." />
-            <marker date="1563080946132" expanded="true" signature="91:3663" ph="{...}" />
-            <marker date="1563080946132" expanded="true" signature="711:913" ph="[...]" />
-            <marker date="1563080946132" expanded="true" signature="1369:1449" ph="{...}" />
-            <marker date="1563080946132" expanded="true" signature="2495:2592" ph="/// abstract method that must be overridden in child classes ... " />
-            <marker date="1563080946132" expanded="true" signature="2635:2816" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
-            <marker date="1563080946132" expanded="true" signature="2849:2992" ph="{...}" />
-            <marker date="1563080946132" expanded="true" signature="2998:3120" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
-            <marker date="1563080946132" expanded="true" signature="3151:3369" ph="{...}" />
-            <marker date="1563080946132" expanded="true" signature="3243:3284" ph="{...}" />
-            <marker date="1563080946132" expanded="true" signature="3316:3363" ph="{...}" />
-            <marker date="1563080946132" expanded="true" signature="3375:3585" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
-            <marker date="1563080946132" expanded="true" signature="3615:3661" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <marker date="1563080975011" expanded="true" signature="53:1190" ph="{...}" />
-            <marker date="1563080975011" expanded="true" signature="80:196" ph="{...}" />
-            <marker date="1563080975011" expanded="true" signature="203:488" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-            <marker date="1563080975011" expanded="true" signature="524:1188" ph="{...}" />
-            <marker date="1563080975011" expanded="true" signature="1056:1117" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <marker date="1563080997739" expanded="true" signature="53:1189" ph="{...}" />
-            <marker date="1563080997739" expanded="true" signature="80:195" ph="{...}" />
-            <marker date="1563080997739" expanded="true" signature="202:487" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-            <marker date="1563080997739" expanded="true" signature="523:1187" ph="{...}" />
-            <marker date="1563080997739" expanded="true" signature="1055:1116" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <marker date="1563080997740" expanded="true" signature="56:1497" ph="{...}" />
-            <marker date="1563080997740" expanded="true" signature="219:334" ph="{...}" />
-            <marker date="1563080997740" expanded="true" signature="341:702" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
-            <marker date="1563080997740" expanded="true" signature="738:1495" ph="{...}" />
-            <marker date="1563080997740" expanded="true" signature="793:1244" ph="{...}" />
-            <marker date="1563080997740" expanded="true" signature="1363:1424" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
+        <state relative-caret-position="912">
           <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding>
             <marker date="1562702402666" expanded="true" signature="6:53" ph="..." />
@@ -1191,7 +979,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="266">
           <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
           <folding>
             <marker date="1563081110530" expanded="true" signature="6:104" ph="..." />
@@ -1223,16 +1011,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Weapon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="78" column="66" selection-start-line="78" selection-start-column="66" selection-end-line="78" selection-end-column="66" />
+          <folding>
+            <marker date="1563080946132" expanded="true" signature="6:44" ph="..." />
+            <marker date="1563080946132" expanded="true" signature="91:3663" ph="{...}" />
+            <marker date="1563080946132" expanded="true" signature="711:913" ph="[...]" />
+            <marker date="1563080946132" expanded="true" signature="1369:1449" ph="{...}" />
+            <marker date="1563080946132" expanded="true" signature="2495:2592" ph="/// abstract method that must be overridden in child classes ... " />
+            <marker date="1563080946132" expanded="true" signature="2635:2816" ph="/// coroutine for reloading the weapon, resets the ammo and waits a specified amount of time before allowing ... " />
+            <marker date="1563080946132" expanded="true" signature="2849:2992" ph="{...}" />
+            <marker date="1563080946132" expanded="true" signature="2998:3120" ph="/// Called from weaponAgents, this determines if the weapon is allowed to fire or not ... " />
+            <marker date="1563080946132" expanded="true" signature="3151:3369" ph="{...}" />
+            <marker date="1563080946132" expanded="true" signature="3243:3284" ph="{...}" />
+            <marker date="1563080946132" expanded="true" signature="3316:3363" ph="{...}" />
+            <marker date="1563080946132" expanded="true" signature="3375:3585" ph="/// Starts a coroutine inherited from the Weapon class, this was just an easy method of adding a reload timer in, ... " />
+            <marker date="1563080946132" expanded="true" signature="3615:3661" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AutoWeapons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <marker date="1563080975011" expanded="true" signature="53:1190" ph="{...}" />
+            <marker date="1563080975011" expanded="true" signature="80:196" ph="{...}" />
+            <marker date="1563080975011" expanded="true" signature="203:488" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
+            <marker date="1563080975011" expanded="true" signature="524:1188" ph="{...}" />
+            <marker date="1563080975011" expanded="true" signature="1056:1117" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SemiWeapons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <marker date="1563080997739" expanded="true" signature="53:1189" ph="{...}" />
+            <marker date="1563080997739" expanded="true" signature="80:195" ph="{...}" />
+            <marker date="1563080997739" expanded="true" signature="202:487" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
+            <marker date="1563080997739" expanded="true" signature="523:1187" ph="{...}" />
+            <marker date="1563080997739" expanded="true" signature="1055:1116" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ShotgunWeapons.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
-          <caret line="33" column="103" lean-forward="true" selection-start-line="33" selection-start-column="103" selection-end-line="33" selection-end-column="103" />
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <marker date="1563080997740" expanded="true" signature="56:1497" ph="{...}" />
+            <marker date="1563080997740" expanded="true" signature="219:334" ph="{...}" />
+            <marker date="1563080997740" expanded="true" signature="341:702" ph="/// Overrides the abstract shoot method in the Weapon class. This variant instantiates a bullet and then sets ... " />
+            <marker date="1563080997740" expanded="true" signature="738:1495" ph="{...}" />
+            <marker date="1563080997740" expanded="true" signature="793:1244" ph="{...}" />
+            <marker date="1563080997740" expanded="true" signature="1363:1424" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="33" column="103" selection-start-line="33" selection-start-column="103" selection-end-line="33" selection-end-column="103" />
           <folding>
             <marker date="1563083729460" expanded="true" signature="55:1324" ph="{...}" />
             <marker date="1563083729460" expanded="true" signature="267:500" ph="/// checks to see if the object that was collided with has a Health component. If so, calls the damage ... " />
             <marker date="1563083729460" expanded="true" signature="551:1322" ph="{...}" />
             <marker date="1563083729460" expanded="true" signature="675:940" ph="{...}" />
             <marker date="1563083729460" expanded="true" signature="953:1182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="100" column="49" selection-start-line="100" selection-start-column="49" selection-end-line="100" selection-end-column="49" />
+          <folding>
+            <marker date="1563075336116" expanded="true" signature="6:69" ph="..." />
+            <marker date="1563075336116" expanded="true" signature="111:3792" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="1558:1708" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="1735:1768" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="1774:1879" ph="/// Determines if the player has won. if so, invokes the onWin event ... " />
+            <marker date="1563075336116" expanded="true" signature="1908:1990" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="1997:2097" ph="/// Instantiates the player and adds a listener for their death ... " />
+            <marker date="1563075336116" expanded="true" signature="2128:2347" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="2353:2574" ph="/// Called from the onDie event on player.Health. This removes the listener and subtracts lives determining ... " />
+            <marker date="1563075336116" expanded="true" signature="2611:3055" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="2703:2805" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="2818:3049" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="3061:3237" ph="/// Called from inputManager when the pause key is pressed. Sets bool pause to true, stops timescale, ... " />
+            <marker date="1563075336116" expanded="true" signature="3268:3411" ph="{...}" />
+            <marker date="1563075336116" expanded="true" signature="3417:3642" ph="/// Called from either a ui button click or the press of the pause key when the game is in a pause state. ... " />
+            <marker date="1563075336116" expanded="true" signature="3674:3790" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+          <folding>
+            <marker date="1563126319204" expanded="true" signature="6:75" ph="..." />
+            <marker date="1563126319204" expanded="true" signature="115:2974" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="951:988" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="994:1115" ph="/// Called when the player is spawned, this sets the health bar target to the player ... " />
+            <marker date="1563126319204" expanded="true" signature="1161:1223" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="1229:1347" ph="/// Called when an enemy is spawned, this sets the health bar target to the enemy ... " />
+            <marker date="1563126319204" expanded="true" signature="1390:1632" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="1659:2055" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="1694:1802" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="1890:1992" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="2061:2138" ph="/// On click event that resumes the game ... " />
+            <marker date="1563126319204" expanded="true" signature="2169:2211" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="2217:2292" ph="/// on click event that quits the game ... " />
+            <marker date="1563126319204" expanded="true" signature="2321:2442" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="2448:2536" ph="/// on click event that refreshes the current scene ... " />
+            <marker date="1563126319204" expanded="true" signature="2566:2624" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="2630:2716" ph="/// on click event that loads the main game scene ... " />
+            <marker date="1563126319204" expanded="true" signature="2746:2804" ph="{...}" />
+            <marker date="1563126319204" expanded="true" signature="2810:2891" ph="/// on click event that loads the menu scene ... " />
+            <marker date="1563126319204" expanded="true" signature="2920:2972" ph="{...}" />
           </folding>
         </state>
       </provider>
