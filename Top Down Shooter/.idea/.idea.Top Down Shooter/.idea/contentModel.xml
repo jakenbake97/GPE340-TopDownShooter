@@ -32,6 +32,7 @@
           <e p="Ragdoll.cs" t="Include" />
           <e p="RespawnStationary.cs" t="Include" />
           <e p="SemiWeapons.cs" t="Include" />
+          <e p="SettingsMenu.cs" t="Include" />
           <e p="ShotgunWeapons.cs" t="Include" />
           <e p="SilhouetteShader.shader" t="Include" />
           <e p="TestHealthText.cs" t="Include" />

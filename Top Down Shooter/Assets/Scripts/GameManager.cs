@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     public static Player Player { get; private set; }
 
     public static bool Paused = false;
-    private static float originalTimeScale;
+    private static float originalTimeScale = 1f;
 
     private void Awake()
     {
@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
         Lives = initialLives;
         SpawnPlayer();
         enemiesLeft = spawner.enemyCount;
+        Resume();
     }
 
     private void Update()

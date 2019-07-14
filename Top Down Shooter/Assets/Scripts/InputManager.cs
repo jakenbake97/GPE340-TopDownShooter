@@ -45,7 +45,7 @@ public class InputManager : MonoBehaviour
     {
         if (GameManager.Paused)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetButtonDown("Cancel"))
             {
                 GameManager.Resume();
             }
@@ -53,7 +53,7 @@ public class InputManager : MonoBehaviour
             return true;
         }
 
-        if (!Input.GetKeyDown(KeyCode.Escape)) return false;
+        if (!Input.GetButtonDown("Cancel")) return false;
         GameManager.Pause();
         return true;
     }
@@ -63,12 +63,12 @@ public class InputManager : MonoBehaviour
     /// </summary>
     private void MiscKeyInput()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetButtonDown("Reload"))
         {
             player.reloadInput = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetButtonDown("Slow Mo"))
         {
             player.slowMoInput = true;
         }
@@ -79,13 +79,13 @@ public class InputManager : MonoBehaviour
     /// </summary>
     private void MouseClickInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Fire1"))
         {
             player.mouseDown = true;
             player.mouseDownTime = 0f;
         }
 
-        if (!Input.GetMouseButtonUp(0)) return;
+        if (!Input.GetButtonUp("Fire1")) return;
         player.mouseDown = false;
         player.mouseDownTime = 0f;
     }
