@@ -20,6 +20,7 @@
           <e p="DummyTarget.cs" t="Include" />
           <e p="Enemy.cs" t="Include" />
           <e p="EnemySpawner.cs" t="Include" />
+          <e p="Footstep.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="HealPickup.cs" t="Include" />
           <e p="Health.cs" t="Include" />

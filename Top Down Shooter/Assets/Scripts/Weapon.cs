@@ -71,6 +71,11 @@ public abstract class Weapon : MonoBehaviour
     [HideInInspector] public bool player = false;
     protected float timeToShoot = 0f;
 
+    [Header("Sound Settings"), SerializeField]
+    protected AudioSource audioSource;
+
+    [SerializeField] protected AudioClip[] firingSounds;
+
     /// <summary>
     /// abstract method that must be overridden in child classes
     /// </summary>

@@ -23,6 +23,9 @@ public class AutoWeapons : Weapon
         bulletScript.Damage = damage;
         bulletScript.origin = transform;
         bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * bulletForce);
+
+        audioSource.PlayOneShot(firingSounds[Random.Range(0, firingSounds.Length)]);
+
         timeToShoot = Time.time + fireRate;
         ammoLeft--;
     }

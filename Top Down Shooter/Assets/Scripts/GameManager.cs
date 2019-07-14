@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +17,10 @@ public class GameManager : MonoBehaviour
 
     [SerializeField, Tooltip("The number of lives the player starts with")]
     private int initialLives = 3;
+
+    [SerializeField] private AudioClip gameOverSound;
+
+    [SerializeField] private AudioMixerGroup fXMixer;
 
     [SerializeField, Tooltip("Reference to the spawner in the scene")]
     private EnemySpawner spawner;
@@ -91,6 +96,9 @@ public class GameManager : MonoBehaviour
         else
         {
             Instance.onLose.Invoke();
+            var newSource = gameObject.AddComponent<AudioSource>();
+            newSource.outputAudioMixerGroup = fXMixer;
+            newSource.PlayOneShot(gameOverSound);
         }
     }
 
